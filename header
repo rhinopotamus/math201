@@ -48,4 +48,4 @@
 \lhead{MATH 201}
 \rhead{Fall 2025}
 %\lfoot{\copyright\ CLEAR Calculus 2010}
-%\cfoot{}
+\cfoot{}
