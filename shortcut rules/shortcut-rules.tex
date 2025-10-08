@@ -1,0 +1,207 @@
+\documentclass[letter, 12pt]{article}
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{ifpdf,amsmath, amssymb, comment, color, graphicx, stmaryrd,setspace,tikz, fancyhdr, wrapfig, textcomp, units, mathptmx, multicol}
+\usepackage[shortlabels]{enumitem}
+\hyphenpenalty=5000
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\renewcommand{\section}[1]{\begin{center} \textbf{#1} \\\end{center}}
+\newcommand{\diff}[1]{\frac{d}{d#1}}
+%
+\setlength{\parindent}{0in}
+%\oddsidemargin=-.25in
+\allowdisplaybreaks
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{MATH 201}
+\rhead{Fall 2025}
+%\lfoot{\copyright\ CLEAR Calculus 2010}
+\cfoot{}
+\renewcommand{\thefootnote}{*}
+
+\begin{document}
+\section{PS6: Derivative shortcut rules}
+
+\textbf{Instructions:} 
+In this Problem Set, you'll show how to find derivatives \textbf{step-by-step}, carefully listing out all of your steps. I am being so annoying about making you take very small steps, because it's a good way to get comfortable with all the shortcut rules.
+
+For each problem you choose:
+\begin{enumerate}[(a)]
+	\item Refer to the list on the next page to identify \textbf{all} the derivative rules you're going to need to use for your problem.
+    \item Make your sheet of paper into two columns. 
+    \begin{itemize}
+        \item In the left column, do tiny derivative steps. 
+        \item In the right column, list all the rules you are using in that step.
+        \item Look at the example on the next page to see how detailed your steps should be.
+    \end{itemize}
+	\item Repeat with a new problem until you have used \textbf{all} of the derivative rules in the reference list at least once.
+\end{enumerate}
+Throughout, carefully label any derivative you find by name, using correct derivative notation.
+\vfill
+\hrulefill
+
+Here are the problems you can choose from:
+\begin{multicols}{2}
+\begin{enumerate}[{\bf (1)}]
+\item
+Find $\dfrac{dy}{dx}$ if \(y=(2x-1)^8-x+e\).
+\vskip 1em 
+\item 
+If \(L(y) = (\tan(y))^{3} + \tan(3)\), find $L'(y)$.
+\vskip 1em 
+\item
+Find $B'(x)$ if \(B(x) = \cos(e^{3 x})\).
+\vskip 1em 
+\item
+Differentiate \(W(x) =\displaystyle{x^4 - 6x + 10 \over \sqrt{7x + 8}}\).
+\vskip 1em 
+\item
+Differentiate \(g(q) = \displaystyle{q^{5} \over \ln(q + {1\over3})}\).
+\vskip 1em 
+\item
+Differentiate \(B(x) = (C e^{3x} - D)(2 x)\), \\
+where \(C\) and \(D\) are constants.
+\vskip 1em 
+\item
+Find \(f'(y)\) if \(f(y) = \left(\sqrt{y^4 + 1}\right) \left(\ln\left(\dfrac{y}{2}\right)\right)\).
+\item
+Find $\dfrac{dB}{dx}$ if 
+\(B =\displaystyle{e^{x + \pi} \over \sin(\pi x)}\).
+\vskip 1em 
+\item 
+Differentiate \(h(p) = \displaystyle{(2 p - 1)^{1/4} \over \cos(p + 5)}\).
+\vskip 1em 
+\item
+Differentiate \(f(q)=(\cos q)\left(\sin {\left({{2}\over{\pi}}q\right)}\right)\).
+\vskip 1em 
+\item
+Differentiate \(G = p x^5 + q x^3 - x^r\), \\
+where \(p,q\) and \(r\) are constants.
+\vskip 1em 
+\item
+Differentiate \(V = \left(3 x - {1\over4}\right)^{-4} - (5x)^{5/4}\).
+\vskip 1em 
+\item
+Find $\dfrac{dh}{dt}$ if \(h(t) = 7^t \sin(t) + t^7 \cos(t)\).
+\vskip 1em 
+\item
+Differentiate \(h(t) = -3(2t^4 + 7)^4 + 3\).
+\end{enumerate}
+\end{multicols}
+\vfill 
+
+\pagebreak
+
+\textbf{(Example)} Find $\dfrac{dp}{dt}$ if 
+$p(t) = \dfrac{\cos(t^2-1)}{e^{-3t}}$.
+
+\vspace{1em}
+
+I am going to need the following derivative rules:
+\begin{multicols}{3}
+	\begin{itemize}
+		\item quotient rule
+		\item trig function rule
+		\item chain rule
+		\item power rule
+		\item sum rule
+		\item constant function rule
+		\item exponential function rule
+		\item constant multiple rule
+		\item[]
+	\end{itemize}
+\end{multicols}
+Now I will find the derivative, step by step, and 
+explain what rules I am using in every step.
+I am highlighting changes from the previous line in red.
+\begin{align*}
+\textbf{Steps}& 
+& \textbf{Rules} \\\hline
+&&\\
+\frac{dp}{dt} &= \frac{[e^{-3t}]\cdot \diff{t}[\cos(t^2-1)] - 
+					   [\cos(t^2-1)]\cdot \diff{t}[e^{-3t}]}
+					  {[e^{-3t}]^2}
+& \textrm{(quotient rule)} \\ \\
+&= \frac{[e^{-3t}] \cdot \diff{t}[\cos(t^2-1)] - 
+         [\cos(t^2-1)]\cdot
+         \red{[e^{-3t}\cdot\diff{t}[-3t]]}}
+		{[e^{-3t}]^2} 
+& \textrm{(chain rule, } \\ 
+&& \textrm{exponential function rule)} \\ \\
+&= \frac{[e^{-3t}] \diff{t}[\cos(t^2-1)] - 
+         [\cos(t^2-1)]\cdot 
+		 [e^{-3t}\cdot\red{(-3)}]}
+		{[e^{-3t}]^2} 
+& \textrm{(constant multiple rule, } \\
+&& \textrm{power rule)} \\ \\
+&= \frac{[e^{-3t}] \cdot
+         \red{[-\sin(t^2-1)\cdot\diff{t}(t^2-1)]} - 
+		 [\cos(t^2-1)]\cdot 
+         [e^{-3t}\cdot(-3)]}
+		{[e^{-3t}]^2}
+& \textrm{(chain rule, } \\
+&& \textrm{trig function rule)} \\ \\
+&= \frac{[e^{-3t}] \cdot
+         [-\sin(t^2-1)\cdot \red{(2t-0)}] - 
+		 [\cos(t^2-1)]\cdot 
+         [e^{-3t}\cdot(-3)]}
+		{[e^{-3t}]^2}
+& \textrm{(sum rule, power rule,} \\
+&& \textrm{constant function rule)}
+\end{align*}
+
+And now I am done, because I have no more ``please take the derivative of'' signs left. Yay!
+
+\pagebreak
+
+\section{List of derivative shortcut rules}
+
+Here is the list of shortcut rules. Check them off as you use them. Keep this list for reference!
+{ \everymath{\displaystyle}
+    \begin{itemize}[label=\(\square\)]
+        \item sum rule: $\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)]$ 
+        \item constant multiple rule: $\diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)]$
+        \item constant function rule: $\diff{x}[c] = 0$
+        \item power rule: $\diff{x}[x^n] = nx^{n-1}$
+        \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
+        \item trigonometric function rules: 
+        \begin{itemize}[label=\(\bigcirc\)]
+            \item $\diff{x}[\sin(x)] = \cos(x)$
+            \item $\diff{x}[\cos(x)] = -\sin(x)$
+            \item $\diff{x}[\tan(x)] = \sec^2(x)$
+        \end{itemize}
+        \item product rule: $\diff{x}[f(x) \cdot g(x)] = \diff{x}[f(x)] \cdot g(x) + \diff{x}[g(x)] \cdot f(x)$
+        \item quotient rule: $\diff{x}\left[\frac{f(x)}{g(x)}\right] 
+        = \frac{g(x) \cdot \diff{x}[f(x)] - f(x) \cdot \diff{x}[g(x)]}{[g(x)]^2}$
+        \item chain rule: $[f(g(x))]' = f'(g(x)) \cdot g'(x)$
+        \item logarithmic function rule: $\diff{x}[\ln(x)] = \frac{1}{x}$
+    \end{itemize}
+    \hrulefill
+
+    Just for reference, here are a few more that come up sometimes. They get used much less and they don't show up on this problem set; I would just be sad if I didn't write them down.
+    \begin{multicols}{2}
+        
+        \begin{itemize}[label=\(\centerdot\)]
+            \item inverse trigonometric function rules: 
+            \begin{itemize}[label=\textopenbullet, series=whale]
+                \item $\displaystyle \diff{x}[\arctan(x)] = \frac{1}{1+x^2}$
+                \item $\displaystyle \diff{x}[\arcsin(x)] = \frac{1}{\sqrt{1-x^2}}$
+            \end{itemize}
+            \vfill\null
+            \item rules for other trigonometric functions:
+            \begin{itemize}[resume*=whale]
+                \item $\diff{x}[\cot(x)]=-\csc^2(x)$
+                \item $\diff{x}[\sec(x)]=\sec(x)\tan(x)$
+                \item $\diff{x}[\csc(x)]=-\csc(x)\cot(x)$
+            \end{itemize}
+        \end{itemize}
+    \end{multicols}
+}
+
+\end{document}
