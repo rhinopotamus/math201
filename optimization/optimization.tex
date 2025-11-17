@@ -1,0 +1,57 @@
+\input{../header}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+%##################################################################
+\section{Applied optimization recipe}
+A lot of calculus students find applied optimization (and related rates) particularly tricky, and here's why: \textit{there's no formula for doing them.} Every situation is a bit different, and what works in one case doesn't necessarily work in another.
+
+There is, however, a \textit{recipe} (if I was feeling very fancy I would call it a \textit{heuristic} -- google it) that you can follow to think your way through optimization problems.
+
+\begin{enumerate}
+    \item Draw three pictures.
+    \begin{itemize}
+        \item If you don't draw three, it's harder to see what's different between the pictures.
+        \item Draw your pictures pretty big, or you'll have a hard time labeling.
+    \end{itemize}
+    \item Determine what quantities are \textit{different} (ie., variables) and what ones are the same.
+    \begin{itemize}
+        \item If something is different between your pictures, label it with a letter.
+        \item If something is the same in all your pictures, label it with what number it is.
+    \end{itemize}
+    \item Write down a \textit{constraint equation}.
+    \begin{itemize}
+        \item This has to do with the quantity that's the same in your three pictures.
+        \item What keeps you from just using whatever numbers you want?
+    \end{itemize}
+    \item Write down an \textit{objective function}.
+    \begin{itemize}
+        \item This is the thing you want to be the biggest or smallest possible.
+        \item It must be a function of only one variable; use your constrant equation.
+        \item Creativity! Geometry! Trigonometry! Other math you remember!
+    \end{itemize}
+    \item Figure out any \textit{endpoints}.
+    \begin{itemize}
+        \item Can your one variable be any number you want? Does it have to at least be positive? Is there some kind of maximum or minimum value it could possibly be?
+    \end{itemize}
+    \item Do the \textit{finding extrema recipe}:
+    \begin{enumerate}
+        \item Find all the critical \textit{numbers} of the objective function.
+        \begin{itemize}
+            \item Figure out where the derivative is either zero or undefined.
+        \end{itemize}
+        \item Find all the critical \textit{values} of the objective function.
+        \begin{itemize}
+            \item Plug back into the original objective function.
+        \end{itemize}
+        \item Find all the endpoint values of the objective function.
+        \item Decide who is the smallest and the largest.
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
