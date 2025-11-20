@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
-\usepackage{ifpdf,amsmath, amssymb, comment, color, graphicx, stmaryrd,setspace,enumitem,tikz, fancyhdr, wrapfig, textcomp, siunitx, mathptmx, pdfpages, cancel, multicol}
+\usepackage{ifpdf,amsmath, amssymb, comment, color, graphicx, stmaryrd,setspace,tikz, fancyhdr, wrapfig, textcomp, siunitx, mathptmx, pdfpages, cancel, multicol}
+\usepackage[shortlabels]{enumitem}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
