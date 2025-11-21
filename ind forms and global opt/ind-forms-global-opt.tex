@@ -1,0 +1,41 @@
+\input{../header}
+
+\everymath{\displaystyle}
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+%##################################################################
+\section{PS10: Indeterminate forms; global optimization -- \red{Quick reference key}}
+
+\begin{enumerate}[leftmargin=0pt]
+    \item Show your work to decide whether each of the following limits is indeterminate or not. You don't need to compute the limits (except part H).
+\begin{enumerate}[(a)]
+    \item \(\displaystyle \lim_{x\to 0} \dfrac{\ln(1+x)}{x} = \dfrac{0}{0}\); indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{\Omega \to \infty} \dfrac{2^\Omega}{\Omega^2}= \dfrac{\infty}{\infty}\); indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{t \to \pi} \dfrac{\cos(t)}{t} = \dfrac{-1}{\pi}\); not indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{t \to 0} \dfrac{\cos(t)}{t} = \dfrac{1}{0}\); not indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{z\to\infty} \dfrac{e^z+z}{2e^z + z^2}= \dfrac{\infty}{\infty}\); indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{y \to 1} \dfrac{y^2 - 3y + 4}{5y^2-25y+20}= \dfrac{2}{0}\); not indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{\theta \to \frac{\pi}{2}^-} \frac{\tan(\theta)}{\theta-\frac{\pi}{2}} = \dfrac{\infty}{-0}\); not indeterminate
+    \vfill
+    \item \(\displaystyle \lim_{x \to 0} \frac{\cos(x) - 1}{\sin(3x)-x}= \dfrac{0}{0}\); indeterminate. So:
+    \begin{align*}
+        \lim_{x \to 0} \frac{\cos(x) - 1}{\sin(3x)-x}
+        & \stackrel{\text{L'H}}{=}
+        \lim_{x\to 0} \left[\dfrac{-\sin(x)}{3\cos(3x) - 1}\right] = \dfrac{0}{2} = 0.
+    \end{align*}
+    
+
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
