@@ -1,0 +1,63 @@
+\input{../header}
+
+\everymath{\displaystyle}
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+%##################################################################
+\section{PS12: Definite integrals and the Fundamental Theorem of Calculus \begin{red}- QR\end{red}}
+
+During a 40-minute workout, a person riding an exercise machine burns calories at a rate of \(c(t)\) calories per minute, where the function \(y = c(t)\) is given by the following information:
+
+\begin{itemize}[leftmargin=0.5cm]
+    \item On the interval \(0\leq t\leq 10\), the formula is \(c(t) = -0.05t^2 + t + 10\) (warmup);
+    \item on the interval \(10 \leq t \leq 30\), the formula is \(c(t) = 15\) (conditioning phase);
+    \item on the interval \(30 \leq t \leq 40\), the formula is \(c(t) = -0.05t^2 + 3t - 30\) (cooldown).
+\end{itemize}
+
+\begin{enumerate}[leftmargin=0.5cm]
+    \item (IN1) Shade in the area under \(c(t)\) between \(t = 10\) and \(t = 30\). Use some simple geometry to calculate this area. Give units.
+
+    \begin{red}
+        Rectangle with height 15 cal/min and width 20 mins. Area = 300 cal.
+    \end{red}
+    \item 
+    (INx) Write a sentence explaining what the answer to part 1 \textit{means} in the context of the person exercising.
+
+    \begin{red}
+        Between 10 minutes and 30 minutes, the person burned 300 total calories.
+    \end{red}
+    \item
+    (IN2) Use a Riemann sum with 4 rectangles to approximate the area under \(c(t)\) between \(t = 30\) and \(t=40\).
+
+    \begin{red}
+        Left sum overestimate comes out to $139.0625$ calories.
+
+        Right sum underestimate comes out to $126.5625$ calories.
+
+        Midpoint sum comes out to $133.59375$ calories.
+    \end{red}
+    \item (IN3) Find a formula for an antiderivative \(C(t)\) for the portion of \(c(t)\) that's on the interval \(0\leq t\leq 10\).
+    \begin{red}
+        \[C(t) =\dfrac{-0.05}{3}\ t^3 + \dfrac{1}{2}\ t^2 + 10\ t \]
+    \end{red}
+    \item (IN5) Use your antiderivative \(C(t)\) to find the \textit{exact} value of \(\displaystyle \int_{t=0}^{t=10} c(t)\, dt\). Give units.
+    \begin{red}
+        \begin{align*}
+            \int_{t=0}^{t=10} c(t)\, dt = \left[\dfrac{400}{3}\right] - \Big[0\Big] \approx 133.3 \text{ calories}
+        \end{align*}
+    \end{red}
+    \item (IN5) Now find the \textit{exact} value of \(\displaystyle \int_{t=30}^{t=40} c(t)\, dt\).
+    \begin{red} Same number. \end{red}
+    \item Put it all together: Find the \textit{exact} value of \(\displaystyle \int_{t=0}^{t=40} c(t)\, dt\), give units, and explain what this number means in the context of the person exercising.
+    \begin{red}
+        \begin{align*}
+            \int_{t=0}^{t=40} c(t)\, dt = \dfrac{400}{3} + 300 + \dfrac{400}{3} = \dfrac{1700}{3} \approx 566.67 \text{ calories}
+        \end{align*}
+    \end{red}
+\end{enumerate}
+
+\end{document}

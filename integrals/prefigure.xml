@@ -1,0 +1,48 @@
+<diagram dimensions="(500,200)" margins="5">
+  <definition>c1(t)=-0.05*t^2+t+10</definition>
+  <definition>c2(t)=15</definition>
+  <definition>c3(t)=-0.05*t^2+3*t-30</definition>
+  <definition>a = 1</definition>
+  <coordinates bbox="(-5,-2.5,45,17.5)">
+    
+    <grid spacings="((-5,2.5,45),
+                     (-2.5,2.5,17.5))" 
+          stroke="lightgray"
+          thickness="1"/>
+    <axes hticks="(5,5,45)">
+      <xlabel alignment="nw">min</xlabel>
+      <ylabel alignment="se">cal / min</ylabel>
+    </axes>
+
+    <riemann-sum 
+      function="c3"
+      domain="(30,40)"
+      rule="left"
+      N="4"
+      opacity="0.5"
+    />
+
+    <area-under-curve
+      function="c1"
+      domain="(0,10)"
+      fill="green"
+      opacity="0.5"
+    />
+    <area-under-curve
+      function="c2"
+      domain="(10,30)"
+      fill="lightblue"
+      stroke="lightblue"
+      opacity="0.5"
+    />
+
+    <graph at="warmup" function="c1" domain="(0,10)"/>
+    <graph at="steady" function="c2" domain="(10,30)"/>
+    <graph at="cooldown" function="c3" domain="(30,40)"/>
+    <label p="(35,c3(35))" alignment="ne"><m>{y=c(t)}</m></label>
+
+    
+
+  </coordinates>
+
+</diagram>
