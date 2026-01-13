@@ -1,0 +1,155 @@
+\documentclass[11 pt]{article}
+
+\setlength{\oddsidemargin}{-.45in}
+%\setlength{\evensidemargin}{-.5in}
+\setlength{\textwidth}{7.25in}
+\setlength{\topmargin}{-0.95in}
+\setlength{\textheight}{10.2in}
+
+\usepackage{graphics}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+%\usepackage{multicol}
+%\usepackage{wrapfig}
+\pagestyle{empty}
+
+\usepackage[T1]{fontenc}
+\usepackage{baskervald}
+\usepackage[bigdelims,vvarbb]{newtxmath} 
+
+\newcommand{\ds}{\ensuremath{\displaystyle}}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+
+\newcommand{\ps}{Problem Set~}
+\newcommand{\vi}{\ensuremath{\mathbf{i}}}
+\newcommand{\vj}{\ensuremath{\mathbf{j}}}
+\newcommand{\vk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vr}{\ensuremath{\mathbf{r}}}
+
+\newcommand{\vu}{\ensuremath{\mathbf{u}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vs}{\ensuremath{\mathbf{s}}}
+\newcommand{\ve}{\ensuremath{\mathbf{e}}}
+\newcommand{\vx}{\ensuremath{\mathbf{x}}}
+\newcommand{\vc}{\ensuremath{\mathbf{c}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+urlcolor=blue,pdftitle={MTH 201 Syllabus F15}}
+
+\usepackage{framed}
+
+\newcommand{\bdr}{\ensuremath{\mathbb{R}}}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\newcommand{\bi}{\begin{itemize}}  
+\newcommand{\ei}{\end{itemize}}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+ \hfill Boelkins  W25\\
+ 
+\begin{center}
+Math 201-06 \\
+{\bf Checkpoint 11}
+\end{center}
+
+
+\noindent {\bf Directions:}
+
+\begin{itemize}
+	
+	\item {\bf Desmos.} We will often use \emph{Desmos} for computations and graphing, just like we do during class.  Any work done in \emph{Desmos} must be summarized and briefly explained in writing on your paper.  
+	
+	\item {\bf Resources.} During each checkpoint, you may access your 1 page of notes, \emph{Desmos}, and our Blackboard page (for submission); no other uses of your computer or tablet are permitted.  No collaboration with other human beings or use of other internet resources are allowed.
+	
+	\item {\bf Competency.} Each week, your goal is to demonstrate competency on as many of the included learning targets as you can.  Each question will be marked either ``Y'' or ``NY'': Y for ``yes!'', NY for ``not yet''.  Every learning target will appear on three consecutive checkpoints, so you'll have multiple attempts to demonstrate competency.  ``Competency'' is defined as work that demonstrates clear and complete understanding of the relevant concepts in the learning target. While the work may include a minor error, or one or two minor steps may not be well explained, otherwise the work is complete, correct, and convincing, including the proper use of notation, and appropriate explanation of meaning that uses correct terminology.  (On rare occasions, you might get a ``NY*''; such a mark means you are close to competency and that you have the option to have a short conversation with me prior to the next Checkpoint and attempt to demonstrate competency through the conversation aloud.)	
+	
+	\item {\bf Submission.}  When finished, use a scanning app to create digital images of your work and upload it to Blackboard under the current Checkpoint location, doing so by 1 pm.
+	
+\end{itemize}
+
+\noindent \hrulefill \\
+
+\noindent {\bf Learning Targets:} For Checkpoint \#11, there are two learning target being assessed: 
+
+\begin{quote}
+{\bf LT 12}:  I can solve applied optimization problems using appropriate derivative tests and write a concluding sentence that justifies my work. (Section 3.4) 
+\end{quote}
+
+\begin{quote}
+{\bf LT 13}:  For an object with a piecewise linear velocity function, I can compute the exact distance traveled and change in position of the object over a given time interval. (Section 4.1)
+\end{quote}
+
+\noindent \hrulefill \\
+
+\vfill \hfill {\bf OVER} 
+
+\pagebreak
+
+%\noindent Name: \\ 
+
+\noindent To demonstrate competency on Learning Target \#$n$, you need to correctly respond to all or nearly all of the prompts in question \#$n$.  If you have already passed a learning target on a prior Checkpoint, you don't need to re-attempt it on this one.
+  
+  \begin{enumerate}
+
+	\item[12.] 	Suppose we want to build a cylindrical can with no top in such a way that its surface area is exactly $4$ square feet.  What dimensions produce the can having absolute maximum total volume?  What is the absolute minimum volume that is possible?
+		
+	%Suppose that we want to construct an open box (no top) with a square base that has the following properties: the material for the base costs \$3 per square foot, the material for the sides costs \$2 per square foot, and we want to build the box that holds the most volume for a cost of \$10.
+
+	Your task is to fully \emph{set up} an optimization problem to be solved on an appropriate domain.  \emph{To earn a Y on this problem, you must fully justify your answer using calculus, including 
+	\begin{itemize}
+		\item Draw a picture of the situation and introduce appropriate variables.
+		\item Identify a constraint equation for how variables are related.
+		\item State the quantity being optimized and find a formula that represents this quantity as a function of a single variable.
+		\item Determine, with a sentence of justification, the domain on which the function should be optimized.
+		\item Write 1-2 sentences to explain what you would do from here (\emph{without actually doing so}) to use calculus to find the optimal box.  In particular, be sure to explain how you would determine whether you had found an absolute maximum or absolute minimum.
+	\end{itemize}}
+
+\pagebreak
+
+	\item[13.] An object is moving along a straight path; its velocity is considered positive when moving to the right. The object's velocity $v(t)$ (in meters per second) at time $t$ (in second) is given by the graph above. 	
+
+	\begin{figure}
+	\begin{center}	
+	   \scalebox{0.3}{\includegraphics{images-W25/CP11-LT13.jpg}}
+	   \caption{The graph of the velocity function, $v(t)$.}
+	\end{center}
+	\end{figure}   
+	
+	\be
+	
+		\item On the time interval $[2,6]$, determine the object's change in position, including units on your result.  Clearly explain your thinking and process for determining the change in position.
+		
+		\lr \tr
+		
+		\item On the time interval $[2,6]$, determine the object's total distance traveled, including units on your result.  Is the distance traveled on this interval the same as the object's change in position?  why or why not? Clearly explain your thinking and process for determining the  distance traveled.
+		
+		\lr \tr
+		
+		\item Given an example of an interval $[a,b]$ on which the object's distance traveled is exactly 3 meters (that is, identify numerical values for $a$ and $b$).  Write a sentence to explain and justify your choice of interval.
+		
+	\ee
+
+  \end{enumerate}
+
+
+\end{document}
+	
+
+
+
+
+

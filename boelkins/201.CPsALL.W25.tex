@@ -1,0 +1,368 @@
+\documentclass[11 pt]{article}
+
+\setlength{\oddsidemargin}{-.45in}
+%\setlength{\evensidemargin}{-.5in}
+\setlength{\textwidth}{7.25in}
+\setlength{\topmargin}{-0.95in}
+\setlength{\textheight}{10.2in}
+
+\usepackage{graphics}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+%\usepackage{multicol}
+%\usepackage{wrapfig}
+\pagestyle{empty}
+
+\usepackage[T1]{fontenc}
+\usepackage{baskervald}
+\usepackage[bigdelims,vvarbb]{newtxmath} 
+
+\newcommand{\ds}{\ensuremath{\displaystyle}}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+
+\newcommand{\ps}{Problem Set~}
+\newcommand{\vi}{\ensuremath{\mathbf{i}}}
+\newcommand{\vj}{\ensuremath{\mathbf{j}}}
+\newcommand{\vk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vr}{\ensuremath{\mathbf{r}}}
+
+\newcommand{\vu}{\ensuremath{\mathbf{u}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vs}{\ensuremath{\mathbf{s}}}
+\newcommand{\ve}{\ensuremath{\mathbf{e}}}
+\newcommand{\vx}{\ensuremath{\mathbf{x}}}
+\newcommand{\vc}{\ensuremath{\mathbf{c}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+urlcolor=blue,pdftitle={MTH 201 Syllabus F15}}
+
+\usepackage{framed}
+
+\newcommand{\bdr}{\ensuremath{\mathbb{R}}}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\newcommand{\bi}{\begin{itemize}}  
+\newcommand{\ei}{\end{itemize}}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+ \hfill Boelkins  W25\\
+ 
+\begin{center}
+Math 201-06 \\
+{\bf Sample Learning Target Questions for Final Review}
+\end{center}  
+  
+\begin{enumerate}
+	\item[1.] A ball dropped from the top of a building has height $h(t)$ (in meters) at  time $t$ (in seconds) after its dropped.
+	\be
+
+%		\item Your fitbit odometer records some data about the distance you traveled on a bike ride around Reeds Lake in Grand Rapids. This data is recorded in the table below.
+	
+%	\begin{center}
+%		\begin{tabular}{|c|c|c|c|c|c|c|}
+%		\hline
+%		$t$ (in minutes) & 0 & 10 & 20 & 30 & 40 & 50 \\
+%		\hline
+%		$d(t)$ (in miles) & 0 & 2.5 & 6.5 & 10 & 14.5 & 17.5\\
+%		\hline
+%		\end{tabular}
+%		\end{center}
+%	Find your average velocity over the last 10 minutes of travel. Label your result using proper notation and include units on your answer.
+	
+	\item The following table provides some data for values of $h(t)$ at different times $t$:
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		$t$ (in seconds) & 0.5 & 0.7 & 0.75 & 0.76 \\
+		\hline
+		$h(t)$ (in meters) & 18.75 & 17.55 & 17.1875 & 17.112\\
+		\hline
+		\end{tabular}
+		\end{center}	
+	
+	Use the data to determine the average velocity of the ball on the interval $[0.7,0.76]$.	Include units on your answer.
+	
+		\item The following graph shows a plot of the function $h(t)$:
+		
+		\begin{center}
+		\scalebox{0.2}{\includegraphics{images-W25/LT1-11.png}}
+		\end{center}
+		
+		\begin{itemize}
+		\item Use the graph to find the average velocity of the ball between $t=1$ and $t=1.5$ seconds, $AV_{[1,1.5]}$. Include units on your answer.
+		
+		
+		\item On the graph of $h(t)$ draw a line through $(1,h(1))$ and $(1.5,h(1.5))$; what is the slope of this line and what does that slope mean in the physical context of the function $h$?  Write to explain, being careful and precise.
+	
+		
+		\end{itemize}		
+		
+	\ee
+	
+
+	\pagebreak
+	
+	\item[2.] The following questions ask you to estimate values of the derivatives of the given functions.
+	\be
+	
+		\item Suppose we know the following data for a function $g$:
+
+\begin{center}  
+  \begin{tabular}{r|ccccccc}
+  	$t$ & -5 & -3.5 & -2 & -0.5 & 1 & 2.5 & 4 \\
+	\hline
+	$g(t)$ & 2 & -6 & -10 & -12 & -13 & -13.5 & -13.75 \\
+  \end{tabular}
+\end{center}
+
+Estimate $g'(-2)$ and $g'(2.5)$.  Clearly show your work and thinking, using proper notation.
+	
+		\item  For the function $f$ whose graph is given below, use the graph to provide accurate estimates of $f'(-4.5)$, $f'(-0.5)$, and $f'(2)$. \\
+		
+		 Clearly state your results below the graph writing things like \\ ``$f'(-4.5) \approx$ \underline{\hspace{0.25in}}''; write one sentence to explain your thinking.
+
+
+\ \hspace{0.5in}  \scalebox{0.4}{\includegraphics{images-W25/CP4-01-ff'.png}}
+
+
+	\ee	
+	
+	\item[3.] Let $\displaystyle g(x) = 5 - \frac{3}{x}$.  \\ 
+	
+	Use the limit definition of the derivative to determine a formula for $g'(x)$.  Clearly show all of your steps using proper notation, especially proper limit notation.
+
+\pagebreak
+	
+	\item[4.] For the function $f$ plotted at left, sketch an accurate graph of its derivative, $f'$, on the axes at right. Write at least one sentence below your graph to explain your thinking and process. \\  
+
+
+\begin{center}  
+  \scalebox{0.6}{\includegraphics{images-W25/CP4-4-S23.jpg}} \hspace{0.2in} \scalebox{0.6}{\includegraphics{images-W25/CP4-4-S23-blank.jpg}} \\
+\end{center}
+
+
+
+
+	\item[5.] For each of the following questions, write two careful sentences that explain the meaning of the given derivative value, including correct units.  As part of your response, for each piece of data you should 
+	
+	\begin{itemize}
+		
+		\item clearly identify the meaning in terms of the rate of change of a certain quantity and with relevant units.
+		
+		\item explain what you expect to happen to the value of the function as the independent variable increases by one unit.  For example, you could say something like ``at the instant $\ldots$, I expect that over the next \underline{\hspace{0.25in}}, $\ldots$.''  
+
+	\end{itemize}
+
+
+		\be 
+			
+			\item The value, $V$ (in dollars), of a rare automobile is a function of the number of years, $t$, since the car was first manufactured, given by $V(t)$.  Explain the meaning of $V'(50) = 4150$ in the context of the car's value.
+	
+			\begin{itemize}		
+			  \item (meaning as a rate, with units)
+			  
+
+			
+			  \item (what I expect to happen as the input variable increases)
+			  
+
+				
+			\end{itemize}
+
+			\item  The cost, $C$ (in dollars), to build a new home is a function of $s$ (the number of square feet constructed), given by $C(s)$.  Explain the meaning of $C'(2100) = 245$ in the context of building a house.
+
+			\begin{itemize}		
+			  \item (meaning as a rate, with units)
+			  
+
+			
+			  \item (what I expect to happen as the input variable increases)
+			  
+
+				
+			\end{itemize}
+			
+		
+		\ee
+
+		
+\pagebreak		
+		
+	\item[6.] In both settings below, use the given information to describe the function's behavior, using not only the function's value, but also the values of the first and second derivatives.
+		
+		\be
+			
+			\item On the axes provided, sketch a possible graph of a function $y = g(x)$ that has the following properties: $g(-1) = 1$, $g'(-1) = \frac{1}{3}$, and $g''(-1) = -\frac{1}{4}$, where your graph also satisfies having $g'(x)$ always positive and $g''(x)$ always negative.  Write a careful sentence to explain why you drew your graph as you did. \\
+
+ 
+\scalebox{0.4}{\includegraphics{images-W25/CP4-01-blank.png}} \\
+
+			\item The cost, $C$, to build a new home is a function of $s$, the number of square feet constructed, given by $C(s)$.  Say we know that $C(1750) = 195000$, $C'(1750) = 215$, and $C''(1750) = -4$.  In everyday language, explain what we know about the behavior of the cost function in the context of building a 1750 square foot house.  Cite all three pieces of given information, with units.
+			
+
+
+		\ee
+
+
+%{\bf LT 7}: I can find an equation of the tangent line to a function at a point and use the tangent line to approximate values of the function. (Section 1.8)
+		
+	\item[7.] For a given function $y = g(x)$, say that we know the following information:  $g(-2) = -3$ and $g'(x)$ (the derivative of $g$) is given by the graph below.  
+	
+	
+\begin{center}  
+  \scalebox{0.45}{\includegraphics{images-W25/LT7-CP6.png}} \\
+\end{center}	
+	
+	\emph{Again, the graph here is of $g'(x)$, the derivative of $g(x)$.}
+	
+	Throughout the following questions, proper and correct notation is essential.
+	
+	\be
+		\item Find a formula for $L(x)$, the tangent line approximation to $y = g(x)$ at the point $(a,g(a))$, where $a = -2$.
+
+		
+		\item Use the tangent line approximation you found in (a) to estimate $g(-2.2)$.  Clearly show your work using proper notation.
+		
+
+		
+		\item Is the estimate you found in (b) too large or too small?  Why?
+		
+
+	\ee
+
+
+	\vfill \hfill {\bf OVER}
+	
+	\pagebreak
+
+%{\bf LT 8}: I can use the constant multiple and sum/difference rules to find the derivative of a function.  (Section 2.1)
+
+	\item[8.] Consider the two piecewise linear functions $p$ and $q$ given by the figure below.
+	
+\begin{center}  
+\scalebox{0.45}{\includegraphics{images-W25/LT8-CP6.png}} \\
+\end{center}
+
+Determine the \emph{exact} value of each of the following derivatives that involve functions that are defined in terms of $p$ and $q$.  Clearly show your work and thinking with proper notation, and write one sentence to explain your overall approach.
+	\be
+		\item Let $G(x) = p(x) \cdot q(x)$.  Find $G'(3)$.
+		
+		
+		\item Let $H(x) = \frac{q(x)}{p(x)}$.  Find $H'(0)$.
+		
+		
+	\ee
+	
+
+
+	\item[9.]  Consider the two piecewise linear functions $g$ and $h$ given by the figure below.
+	
+ 
+\scalebox{0.4}{\includegraphics{images-W25/HW10-S24-PW.jpg}} \\
+
+
+Determine each of the following derivative values that involve functions that are defined in terms of $g$ and $h$.  Clearly show your work and thinking using proper notation, be sure your values are \emph{exact} in light of the given information, and write one sentence to explain your overall approach.
+
+	\be
+		\item Let $M(x) = h(g(x))$.  Determine $H'(3)$.  Write your work and conclusion in the space to the right of the graph above.
+		
+		\item Let $N(x) = g(x^3)$.  Determine $N'(-1)$.
+			
+		\item Let $P(x) = \ln(h(x))$.  Determine $P'(1)$.
+	\ee
+
+\pagebreak
+
+	\item[10.]  Consider the curve defined implicitly by the equation
+	$$xy^3 + 2xy = 6$$
+	
+	\be
+	
+		\item Use implicit differentiation to find an expression for $\frac{dy}{dx}$ that depends on $x$ and $y$.  Show all of your work and thinking clearly, using correct notation.
+	
+		
+		\item Notice that the point $(2,1)$ lies on the curve $xy^3 + 2xy = 6$.  Find the exact slope of the tangent line to curve at $(2,1)$.  Show clearly how you determined this value, and label your work with proper notation.
+	
+	\ee
+
+
+	\item[11.]   Gravel is being dumped from a conveyor belt at a rate of 10 cubic feet per minute. The gravel forms a pile in the shape of a right circular cone whose base diameter and height are always the same. 
+	
+	At what instantaneous rate is the height of the pile increasing when the pile is 12 ft high? 
+	
+	
+% A rocket is launched and a laser range finder follows the path of the rocket.  The range finder is located on the ground 300 feet from the point where the rocket was launched.  The rocket rises vertically and does so at a constant rate of 20 feet per second.
+	
+% At what instantaneous rate is the distance between the laser range finder and the rocket changing at the instant the laser range finder reads ``500 feet''.
+
+%Consider a triangle with base $b$ and height $h$ where both the base and height are changing as time elapses.  Suppose we know the following information: the height of the triangle is always 5 times the length of the base, and at the instant the height is $h = 9$ inches, the height is increasing at an instantaneous rate of $0.48$ inches per second.  
+	
+%	How fast is the triangle's area increasing at this same instant?
+
+\emph{	To earn a Y on this question, you must fully justify your answer using calculus, including 
+	\begin{itemize}
+		\item a clear, labeled diagram with variables identified
+		\item appropriate equations that relate changing quantities and their rates of change
+		\item proper notation involving derivatives
+		\item a clear summary of your result, with correct units
+	\end{itemize}}
+
+
+	\item[12.] 	Suppose we want to build a cylindrical can with no top in such a way that its surface area is exactly $4$ square feet.  What dimensions produce the can having absolute maximum total volume?  What is the absolute minimum volume that is possible?
+		
+	%Suppose that we want to construct an open box (no top) with a square base that has the following properties: the material for the base costs \$3 per square foot, the material for the sides costs \$2 per square foot, and we want to build the box that holds the most volume for a cost of \$10.
+
+	Your task is to fully \emph{set up} an optimization problem to be solved on an appropriate domain.  \emph{To earn a Y on this problem, you must fully justify your answer using calculus, including 
+	\begin{itemize}
+		\item Draw a picture of the situation and introduce appropriate variables.
+		\item Identify a constraint equation for how variables are related.
+		\item State the quantity being optimized and find a formula that represents this quantity as a function of a single variable.
+		\item Determine, with a sentence of justification, the domain on which the function should be optimized.
+		\item Write 1-2 sentences to explain what you would do from here (\emph{without actually doing so}) to use calculus to find the optimal box.  In particular, be sure to explain how you would determine whether you had found an absolute maximum or absolute minimum.
+	\end{itemize}}
+
+\pagebreak
+
+	\item[13.] An object is moving along a straight path; its velocity is considered positive when moving to the right. The object's velocity $v(t)$ (in meters per second) at time $t$ (in second) is given by the graph above. 	
+
+	\begin{figure}
+	\begin{center}	
+	   \scalebox{0.3}{\includegraphics{images-W25/CP11-LT13.jpg}}
+	   \caption{The graph of the velocity function, $v(t)$.}
+	\end{center}
+	\end{figure}   
+	
+	\be
+	
+		\item On the time interval $[2,6]$, determine the object's change in position, including units on your result.  Clearly explain your thinking and process for determining the change in position.
+		
+
+		
+		\item On the time interval $[2,6]$, determine the object's total distance traveled, including units on your result.  Is the distance traveled on this interval the same as the object's change in position?  why or why not? Clearly explain your thinking and process for determining the  distance traveled.
+
+		
+		\item Given an example of an interval $[a,b]$ on which the object's distance traveled is exactly 3 meters (that is, identify numerical values for $a$ and $b$).  Write a sentence to explain and justify your choice of interval.
+		
+	\ee
+
+
+\end{enumerate}
+
+
+
+\end{document}

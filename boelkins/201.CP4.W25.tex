@@ -1,0 +1,216 @@
+\documentclass[11 pt]{article}
+
+\setlength{\oddsidemargin}{-.45in}
+%\setlength{\evensidemargin}{-.5in}
+\setlength{\textwidth}{7.25in}
+\setlength{\topmargin}{-0.95in}
+\setlength{\textheight}{10.2in}
+
+\usepackage{graphics}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+%\usepackage{multicol}
+%\usepackage{wrapfig}
+\pagestyle{empty}
+
+\usepackage[T1]{fontenc}
+\usepackage{baskervald}
+\usepackage[bigdelims,vvarbb]{newtxmath} 
+
+\newcommand{\ds}{\ensuremath{\displaystyle}}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+
+\newcommand{\ps}{Problem Set~}
+\newcommand{\vi}{\ensuremath{\mathbf{i}}}
+\newcommand{\vj}{\ensuremath{\mathbf{j}}}
+\newcommand{\vk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vr}{\ensuremath{\mathbf{r}}}
+
+\newcommand{\vu}{\ensuremath{\mathbf{u}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vs}{\ensuremath{\mathbf{s}}}
+\newcommand{\ve}{\ensuremath{\mathbf{e}}}
+\newcommand{\vx}{\ensuremath{\mathbf{x}}}
+\newcommand{\vc}{\ensuremath{\mathbf{c}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+urlcolor=blue,pdftitle={MTH 201 Syllabus F15}}
+
+\usepackage{framed}
+
+\newcommand{\bdr}{\ensuremath{\mathbb{R}}}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\newcommand{\bi}{\begin{itemize}}  
+\newcommand{\ei}{\end{itemize}}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+ \hfill Boelkins  W25\\
+ 
+\begin{center}
+Math 201-06 \\
+{\bf Checkpoint 4}
+\end{center}
+
+
+\noindent {\bf Directions:}
+
+\begin{itemize}
+	
+	\item {\bf Desmos.} We will often use \emph{Desmos} for computations and graphing, just like we do during class.  Any work done in \emph{Desmos} must be summarized and briefly explained in writing on your paper.  
+	
+	\item {\bf Resources.} During each checkpoint, you may access your 1 page of notes, \emph{Desmos}, and our Blackboard page (for submission); no other uses of your computer or tablet are permitted.  No collaboration with other human beings or use of other internet resources are allowed.
+	
+	\item {\bf Competency.} Each week, your goal is to demonstrate competency on as many of the included learning targets as you can.  Each question will be marked either ``Y'' or ``NY'': Y for ``yes!'', NY for ``not yet''.  Every learning target will appear on three consecutive checkpoints, so you'll have multiple attempts to demonstrate competency.  ``Competency'' is defined as work that demonstrates clear and complete understanding of the relevant concepts in the learning target. While the work may include a minor error, or one or two minor steps may not be well explained, otherwise the work is complete, correct, and convincing, including the proper use of notation, and appropriate explanation of meaning that uses correct terminology.  (On rare occasions, you might get a ``NY*''; such a mark means you are close to competency and that you have the option to have a short conversation with me prior to the next Checkpoint and attempt to demonstrate competency through the conversation aloud.)	
+	
+	\item {\bf Submission.}  When finished, use a scanning app to create digital images of your work and upload it to Blackboard under the current Checkpoint location, doing so by 1 pm.
+	
+\end{itemize}
+
+\noindent \hrulefill \\
+
+\noindent {\bf Learning Targets:} For Checkpoint \#4, there are four learning target being assessed: 
+
+\begin{quote}
+{\bf LT 2}: I can estimate the derivative of a function at a given value using numerical or graphical data. 
+(Section 1.3)
+\end{quote}
+
+\begin{quote}
+{\bf LT 3}: I can use the limit definition of the derivative to find the derivative function. (Section 1.4) 
+\end{quote}
+
+\begin{quote}
+{\bf LT 4}: Given a graph of a function, I can sketch an accurate graph of the derivative (including the correct sign, direction, relative heights, zeros, and any places where the derivative doesn’t exist). (Section 1.4) 
+\end{quote}
+
+\begin{quote}
+{\bf LT 5}:  I can interpret the instantaneous rate of change of a function and explain its meaning in context.  (Section 1.5)
+\end{quote}
+
+
+\noindent \hrulefill \\
+
+\vfill \hfill {\bf OVER} 
+
+\pagebreak
+
+%\noindent Name: \\ 
+
+\noindent To demonstrate competency on Learning Target \#$n$, you need to correctly respond to all or nearly all of the prompts in question \#$n$.  If you have already passed a learning target on a prior Checkpoint, you don't need to re-attempt it on this one.
+  
+  
+\begin{enumerate}
+
+	\item[2.] 
+	\be
+	
+		\item  For the function $f$ whose graph is given below, use the graph to provide accurate estimates of $f'(-2.5)$, $f'(1)$, and $f'(3)$.  Clearly state your results to the right of the graph writing things like \\ ``$f'(-2.5) \approx$ \underline{\hspace{0.25in}}''; write one sentence to explain your thinking. \\
+
+
+\ \hspace{0.4in}
+  \scalebox{0.4}{\includegraphics{images-W25/cp4LT4.jpg}} 
+  
+\vspace{0.5in}
+
+		\item Suppose we know the following data for a function $g$:
+
+\begin{center}  
+  \begin{tabular}{r|ccccccc}
+  	$t$ & -0.75 & -0.5 & -0.25 & 0 & 0.25 & 0.5 & 0.75 \\
+	\hline
+	$g(t)$ & -2 & -6 & -9 & -11 & -12 & -12.5 & -12.75 \\
+  \end{tabular}
+\end{center}
+
+Estimate $g'(-0.5)$ and $g'(0.25)$.  Clearly show your work and thinking, using proper notation.
+
+\lr \tr
+
+	\ee
+
+
+
+\vfill \hfill {\bf OVER} 
+	
+	\item[3.] Let $\displaystyle r(x) = \frac{3}{x-1}$.  \\ 
+	
+	Use the limit definition of the derivative to determine a formula for $r'(x)$.  Clearly show all of your steps using proper notation.
+	
+	
+\br \lr \tr 
+	
+	\item[4.] For the function $f$ plotted at left, sketch an accurate graph of its derivative, $f'$, on the axes at right.  Write at least one sentence to explain your thinking in constructing the graph of $f'$. \\  
+
+\begin{center}  
+  \scalebox{0.4}{\includegraphics{images-W25/cp4LT4.jpg}} \hspace{0.25in}   \scalebox{0.4}{\includegraphics{images-W25/cp4LT4blank.jpg}}\\
+\end{center}
+
+	\vfill \hfill {\bf OVER}
+	
+	\pagebreak
+	
+	\item[5.] For each of the following questions, carefully explain the meaning of the given derivative value by discussing a particular rate of change, with appropriate units.  In addition, for each piece of data, you should explain what you expect to happen to the value of the function as the independent variable increases.  For example, you could say something like ``at the moment $t = \ldots$, I expect that over the next minute, $\ldots$.''  
+	
+		\be 
+			
+			\item  The temperature of the brakes in a race car is measured by the function $B(t)$ in degrees Fahrenheit at time $t$ in seconds. Explain the meaning of $B'(2) = 23.61$ in terms of the brake's temperature.  Include units on your answer.
+			
+			\begin{itemize}
+			
+			  \item (meaning as a rate, with units)
+			  
+				\vspace{1.0in}
+			
+			  \item (what I expect to happen)
+			  
+			  	\vspace{1.0in}
+				
+			\end{itemize}
+			
+			\item The price of a stock, $S(t)$, is measured in ``dollars per share'' on day $t$.  Explain the meaning of \\ $S'(207) = -1.43$ in the context of stock shares, including units. 
+	
+		\begin{itemize}		
+			  \item (meaning as a rate, with units)
+			  
+				\vspace{1.0in}
+			
+			  \item (what I expect to happen)
+			  
+			  	\vspace{1.0in}
+				
+			\end{itemize}
+			
+			\item A person riding a bike burns $C(s)$ calories per minute while riding at a speed of $s$ feet per minute.  Explain the meaning of $C'(2100) = 0.25$ in terms of the rate at which the person is burning calories.
+
+			\begin{itemize}
+			
+			  \item (meaning as a rate, with units)
+			  
+				\vspace{1.0in}
+			
+			  \item (what I expect to happen)
+			  
+			  	\vspace{1.0in}
+				
+			\end{itemize}	
+
+		\ee
+
+\end{enumerate}
+
+\end{document}
