@@ -47,6 +47,6 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \lhead{MATH 201}
-\rhead{Fall 2025}
+\rhead{Spring 2026}
 %\lfoot{\copyright\ CLEAR Calculus 2010}
 \cfoot{}
