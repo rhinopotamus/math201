@@ -1,0 +1,274 @@
+\documentclass[11 pt]{article}
+
+\setlength{\oddsidemargin}{-.45in}
+%\setlength{\evensidemargin}{-.5in}
+\setlength{\textwidth}{7.25in}
+\setlength{\topmargin}{-0.95in}
+\setlength{\textheight}{10.2in}
+
+\usepackage{graphics}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{epstopdf}
+%\usepackage{multicol}
+%\usepackage{wrapfig}
+\pagestyle{empty}
+
+\usepackage[T1]{fontenc}
+\usepackage{baskervald}
+\usepackage[bigdelims,vvarbb]{newtxmath} 
+
+\newcommand{\ds}{\ensuremath{\displaystyle}}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+
+\newcommand{\ps}{Problem Set~}
+\newcommand{\vi}{\ensuremath{\mathbf{i}}}
+\newcommand{\vj}{\ensuremath{\mathbf{j}}}
+\newcommand{\vk}{\ensuremath{\mathbf{k}}}
+\newcommand{\vr}{\ensuremath{\mathbf{r}}}
+
+\newcommand{\vu}{\ensuremath{\mathbf{u}}}
+\newcommand{\va}{\ensuremath{\mathbf{a}}}
+\newcommand{\vs}{\ensuremath{\mathbf{s}}}
+\newcommand{\ve}{\ensuremath{\mathbf{e}}}
+\newcommand{\vx}{\ensuremath{\mathbf{x}}}
+\newcommand{\vc}{\ensuremath{\mathbf{c}}}
+\newcommand{\vb}{\ensuremath{\mathbf{b}}}
+
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue,  
+citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue,  
+urlcolor=blue,pdftitle={MTH 201 Syllabus F15}}
+
+\usepackage{framed}
+
+\newcommand{\bdr}{\ensuremath{\mathbb{R}}}
+
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+
+\newcommand{\bi}{\begin{itemize}}  
+\newcommand{\ei}{\end{itemize}}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+ \hfill Boelkins  W25\\
+ 
+\begin{center}
+Math 201-06 \\
+{\bf Checkpoint 6}
+\end{center}
+
+
+\noindent {\bf Directions:}
+
+\begin{itemize}
+	
+	\item {\bf Desmos.} We will often use \emph{Desmos} for computations and graphing, just like we do during class.  Any work done in \emph{Desmos} must be summarized and briefly explained in writing on your paper.  
+	
+	\item {\bf Resources.} During each checkpoint, you may access your 1 page of notes, \emph{Desmos}, and our Blackboard page (for submission); no other uses of your computer or tablet are permitted.  No collaboration with other human beings or use of other internet resources are allowed.
+	
+	\item {\bf Competency.} Each week, your goal is to demonstrate competency on as many of the included learning targets as you can.  Each question will be marked either ``Y'' or ``NY'': Y for ``yes!'', NY for ``not yet''.  Every learning target will appear on three consecutive checkpoints, so you'll have multiple attempts to demonstrate competency.  ``Competency'' is defined as work that demonstrates clear and complete understanding of the relevant concepts in the learning target. While the work may include a minor error, or one or two minor steps may not be well explained, otherwise the work is complete, correct, and convincing, including the proper use of notation, and appropriate explanation of meaning that uses correct terminology.  (On rare occasions, you might get a ``NY*''; such a mark means you are close to competency and that you have the option to have a short conversation with me prior to the next Checkpoint and attempt to demonstrate competency through the conversation aloud.)	
+	
+	\item {\bf Submission.}  When finished, use a scanning app to create digital images of your work and upload it to Blackboard under the current Checkpoint location, doing so by 1 pm.
+	
+\end{itemize}
+
+\noindent \hrulefill \\
+
+\noindent {\bf Learning Targets:} For Checkpoint \#6, there are four learning target being assessed: 
+
+\begin{quote}
+{\bf LT 5}:  I can interpret the instantaneous rate of change of a function and explain its meaning in context.  (Section 1.5)
+\end{quote}
+
+\begin{quote}
+{\bf LT 6}: I can recognize and explain the relationships among the behaviors of $f$, $f'$, and $f''$ by analyzing graphical or numerical information from one or more of $f$, $f'$, and $f''$. (Section 1.6)
+\end{quote}
+
+\begin{quote}
+{\bf LT 7}: I can find an equation of the tangent line to a function at a point and use the tangent line to approximate values of the function. (Section 1.8)
+\end{quote}
+
+\begin{quote}
+{\bf LT 8}:  I can use the product and quotient rules to find the derivative of a function. (Section 2.3)
+\end{quote}
+
+
+\noindent \hrulefill \\
+
+\vfill \hfill {\bf OVER} 
+
+\pagebreak
+
+%\noindent Name: \\ 
+
+\noindent To demonstrate competency on Learning Target \#$n$, you need to correctly respond to all or nearly all of the prompts in question \#$n$.  If you have already passed a learning target on a prior Checkpoint, you don't need to re-attempt it on this one.
+  
+  
+\begin{enumerate}
+	
+	\item[5.] For each of the following questions, write two careful sentences that explain the meaning of the given derivative value, including correct units.  As part of your response, for each piece of data you should 
+	
+	\begin{itemize}
+		
+		\item clearly identify the meaning in terms of the rate of change of a certain quantity and with relevant units.
+		
+		\item explain what you expect to happen to the value of the function as the independent variable increases by one unit.  For example, you could say something like ``at the instant $\ldots$, I expect that over the next \underline{\hspace{0.25in}}, $\ldots$.''  
+
+	\end{itemize}
+
+
+		\be 
+			
+			\item The value, $V$ (in dollars), of a rare automobile is a function of the number of years, $t$, since the car was first manufactured, given by $V(t)$.  Explain the meaning of $V'(50) = 4150$ in the context of the car's value.
+	
+			\begin{itemize}		
+			  \item (meaning as a rate, with units)
+			  
+				\vspace{1.2in}
+			
+			  \item (what I expect to happen as the input variable increases)
+			  
+			  	\vspace{1.2in}
+				
+			\end{itemize}
+
+			\item  The cost, $C$ (in dollars), to build a new home is a function of $s$ (the number of square feet constructed), given by $C(s)$.  Explain the meaning of $C'(2100) = 245$ in the context of building a house.
+
+			\begin{itemize}		
+			  \item (meaning as a rate, with units)
+			  
+				\vspace{1.2in}
+			
+			  \item (what I expect to happen as the input variable increases)
+			  
+			  	\vspace{1.2in}
+				
+			\end{itemize}
+			
+		
+		\ee
+
+
+	\vfill \hfill {\bf OVER}
+	
+	\pagebreak
+			
+	\item[6.] In both settings below, use the given information to describe the function's behavior, using not only the function's value, but also the values of the first and second derivatives.
+		
+		\be
+			
+			\item On the axes provided, sketch a possible graph of a function $y = g(x)$ that has the following properties: $g(-1) = 1$, $g'(-1) = \frac{1}{3}$, and $g''(-1) = -\frac{1}{4}$, where your graph also satisfies having $g'(x)$ always positive and $g''(x)$ always negative.  Write a careful sentence to explain why you drew your graph as you did. \\
+
+ 
+\scalebox{0.5}{\includegraphics{images-W25/CP4-01-blank.png}} \\
+
+			\item The cost, $C$, to build a new home is a function of $s$, the number of square feet constructed, given by $C(s)$.  Say we know that $C(1750) = 195000$, $C'(1750) = 215$, and $C''(1750) = -4$.  In everyday language, explain what we know about the behavior of the cost function in the context of building a 1750 square foot house.  Cite all three pieces of given information, with units.
+			
+			\lr \tr
+
+		\ee
+
+	\vfill \hfill {\bf OVER}
+	
+	\pagebreak	
+
+%{\bf LT 7}: I can find an equation of the tangent line to a function at a point and use the tangent line to approximate values of the function. (Section 1.8)
+		
+	\item[7.] For a given function $y = g(x)$, say that we know the following information:  $g(-2) = -3$ and $g'(x)$ (the derivative of $g$) is given by the graph below.  
+	
+	
+\begin{center}  
+  \scalebox{0.45}{\includegraphics{images-W25/LT7-CP6.png}} \\
+\end{center}	
+	
+	\emph{Again, the graph here is of $g'(x)$, the derivative of $g(x)$.}
+	
+	Throughout the following questions, proper and correct notation is essential.
+	
+	\be
+		\item Find a formula for $L(x)$, the tangent line approximation to $y = g(x)$ at the point $(a,g(a))$, where $a = -2$.
+		
+		\lr \tr
+		
+		\item Use the tangent line approximation you found in (a) to estimate $g(-2.2)$.  Clearly show your work using proper notation.
+		
+		\lr \tr
+		
+		\item Is the estimate you found in (b) too large or too small?  Why?
+		
+		\tr
+	\ee
+
+
+	\vfill \hfill {\bf OVER}
+	
+	\pagebreak
+
+%{\bf LT 8}: I can use the constant multiple and sum/difference rules to find the derivative of a function.  (Section 2.1)
+
+	\item[8.] Consider the two piecewise linear functions $p$ and $q$ given by the figure below.
+	
+\begin{center}  
+\scalebox{0.55}{\includegraphics{images-W25/LT8-CP6.png}} \\
+\end{center}
+
+Determine the \emph{exact} value of each of the following derivatives that involve functions that are defined in terms of $p$ and $q$.  Clearly show your work and thinking with proper notation, and write one sentence to explain your overall approach.
+	\be
+		\item Let $G(x) = p(x) \cdot q(x)$.  Find $G'(3)$.
+		
+		\lr \tr \lr
+		
+		\item Let $H(x) = \frac{q(x)}{p(x)}$.  Find $H'(0)$.
+		
+		\lr \tr \lr
+		
+	\ee
+	
+%	\vfill \hfill {\bf OVER}
+
+
+\end{enumerate}
+
+
+\end{document}
+	
+	\pagebreak
+
+	\item[9.] Consider two function $f$ and $g$ for which the following values are given:
+	\begin{tabular}{ccccc}
+ 	$x$ & $f(x)$ & $f'(x)$ & $g(x)$ & $g'(x)$ \\ \hline
+	3 & 7 & 3/4 & -4 & -1/3 \\ \hline
+	-2 & 5 & -3 & 2 & 2/5 
+	\end{tabular}
+
+	
+	(In the table, note that the $x$ values are at the far left, and then the column tells you the corresponding function/derivative value.  For example: $f'(3) = 3/4$.) \\
+	
+	In addition, consider the two functions $r(t) = t^t$ and $s(t) = \arccos(t)$, whose derivatives are 
+	$$r'(t) = t^t(\ln(t)+1) \ \mbox{and} \ s'(t) = -\frac{1}{\sqrt{1-t^2}}$$ (do not worry about where these derivative formulas for $r'$ and $s'$ come from). \\
+	
+	{\bf Use the given information above about $f$, $g$, $r$, and $s$ to answer the following questions.}
+	
+	\be
+		\item If $h(x) = g(x) \cdot f(x)$, determine $h'(3)$.  Cite any structure rules that you use and clearly show your work and thinking with proper notation.
+		
+		\mr
+		
+		\item If $v(x) = \frac{f(x)}{g(x)}$, determine $v'(-2)$.  Cite any structure rules that you use and clearly show your work and thinking with proper notation.
+		
+		\mr
+		
+		\item If $\displaystyle q(t) =  \frac{s(t)}{r(t)}$, determine a formula for $q'(t)$.   Cite any structure rules you use; {\bf do not simplify your result -- there is no algebra you need to do}.
+	\ee
+
+
+
