@@ -1,0 +1,71 @@
+\input{../header}
+\usepackage{pgfplots}
+\setlength{\parskip}{.2cm}
+
+\begin{document}
+ \begin{center}
+        \subsection*{Some notes on derivative notation}
+    \end{center}
+    
+    In class, we've talked about two different notations for the derivative: Newton notation, with the ``prime'' symbol $'$, and Leibniz notation, $\tfrac{d}{dx}$. In this handout I'd like to spend a little time talking about how to use these words properly. Think of this as a grammar lesson in a language class. :)
+    
+    Math notation is used to \textbf{translate} sentences in a spoken language into math symbols that we can work with more easily. (This is the key insight of algebra: it's way easier to work with something like ``x + 3 = 4'' than it is to work with a sentence like ``the quantity such that when 3 is added to it, the result is 4.'')
+    
+    There are \textbf{several different kinds of sentences} involving derivatives that we might want to translate into math symbols. There's sentences that \textbf{instruct us to take a derivative} of a particular function, and there's sentences that talk about \textbf{the result of taking the derivative} -- that is, about the derivative function itself. Derivative notation thus has to serve \textbf{several different purposes}.
+
+\begin{center}
+\def\arraystretch{2.0}
+\begin{tabular}{c|c|c|c}
+\textbf{Quick reference} & Instruction                  & Result          & Value                              \\\hline
+Newton notation  & $[\hspace{1cm}]'$            & $f'(x)$         & $f'(a)$                            \\\hline
+Leibniz notation & $\dfrac{d}{dx}[\hspace{1cm}]$ & $\dfrac{df}{dx}$ & $\left.\dfrac{df}{dx}\right|_{x=a}$
+\end{tabular}
+\end{center}
+    
+    \subsection*{The instruction: ``please find the derivative of''}
+    
+    Let's translate the following sentence into math symbols: ``Find the derivative of the function $\sin(x)$.'' This is an instruction to take a derivative. Here's how this looks in Leibniz notation:
+    \[\frac{d}{dx} \sin(x)\]
+    We might even wrap the thing we want to take the derivative of in parentheses or brackets, for clarity, especially if there's multiple terms:
+    \[\frac{d}{dx}(x^2+4) \textrm{, or maybe } \frac{d}{dt}\left[\cos(t) + e^t\right]\]
+    Here's an \textbf{important} thing to notice: the letter in the bottom of the Leibniz derivative sign is always the letter representing the independent variable. This helps us to distinguish between letters that represent variables and letters that represent constants. Consider:
+    \[\dfrac{d}{d\mathbf{x}} \Big[z^x\Big]  = z^x \cdot \ln(z)
+    \text{ (exponential function rule)}; \qquad \dfrac{d}{d\mathbf{z}} \Big[z^x\Big] = x\cdot z^{x-1}
+    \text{ (power function rule)}\]
+    
+    Here is how you might write the instruction version in Newton notation:
+    \[\left[\sin(x)\right]' \textrm{, or } (x^2+4)' \textrm{, or } (\cos(t) + e^t)'\]
+    If we are being \textit{very} careful, which perhaps we should, we would probably say something like:
+    \[\text{``Find } f'(x) \text{ for } f(x) = \sin(x)\textrm{,'' or ``Find } g'(t) \text{ if } g(t) = \cos(t) + e^t\text{.''}\]
+    
+    \subsection*{The result: ``the new function who is the old one's derivative''}
+    
+    Here's where Newton notation really shines: it's really easy for us to say something like 
+    \[\textrm{If } f(x) = \sin(x) \textrm{, then } f'(x) = \cos(x).\]
+	It's \textbf{especially} easy for us to translate ``the slope of the function when $x = 2$'':
+	\[f'(2)\]
+	So nice! Newton notation emphasizes that the derivative of some function is itself a new function.
+	
+	Here's how the result of the derivative looks in Leibniz notation:
+	\[\textrm{If } f(x) = \sin(x) \textrm{, then } \frac{df}{dx} = \cos(x)\]
+	We might also say
+	\[\textrm{If } y = 2x^2 \textrm{, then } \frac{dy}{dx} = 4x.\]
+	
+	Leibniz notation gets \textbf{real} cumbersome if we want to say ``the slope of the function when $x=2$'':
+	\[ \left.\frac{df}{dx}\right|_{x=2} \textrm{, or perhaps } \left.\frac{dy}{dx}\right|_{x=2}\]
+	Ew, that's way worse than the simple and elegant $f'(2)$.
+	
+	However, Leibniz notation shines for \textbf{implicit differentiation,} where we want to represent ``the derivative of $y$, which is some unknown function of $x$'':
+	\[\frac{dy}{dx}\]
+	Compare Newton notation: \[y' \textrm{ or perhaps } y'(x)\]
+	Personally, I much prefer Leibniz notation here, because it \textbf{looks} more like a derivative, and thus is better at reminding me that it represents a derivative. We can also run into the issue where that $'$ in hand-written text can start to look like an exponent of 1.
+
+    \hrulefill
+	
+	Further reading: Take a look at the section in our textbook labeled \href{https://activecalculus.org/single/sec-2-1-elem-rules.html#sec-2-1-elem-rules-4}{``2.1.1 Some Key Notation.''}
+
+	
+	A historical note: Newton actually used dots: $\dot f(x)$. The prime was first used by Lagrange, but it reminded everyone so much of Newton's dots that they tend to think of them together. Newton dot notation is commonly used in physics to denote \textit{specifically} a derivative \textit{with respect to time}.
+
+    %#####################################d############################
+\end{document}
