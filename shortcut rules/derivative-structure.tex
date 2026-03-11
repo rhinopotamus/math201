@@ -1,0 +1,56 @@
+\include{../header}
+
+\usepackage{parskip,scalerel}
+
+\newcommand{\diff}[1]{\frac{d}{d#1}}
+
+\begin{document}
+\section{PS6: Identifying structure in derivative problems}
+
+So exactly the hard part about learning derivative shortcut rules is figuring out which ones to use when. The direct answer to this question is, you use the shortcut rules that match the \textbf{algebraic structure} of the function whose derivative you are finding.
+
+Identifying \textbf{algebraic structure} takes some practice! Let's get into it with this problem set.
+
+You will need 
+NUMBER!!!! 
+different color pens or pencils, and I recommend printing this sheet out and writing on it directly.
+
+\hrulefill
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Consider the function 
+    \[\scaleto{f(x) = \frac{7}{x} - 7^x + 3x^7 - 2\ \sin(x)+ \sqrt{x}}{30 pt} \]
+    In different colors for each:
+    \begin{enumerate}[(a), leftmargin=15pt]
+        \item circle anywhere that functions are being \textit{added or subtracted} to make a bigger function,
+        \item circle everything that's a \textit{constant multiple} of some function,
+        \item circle everything that's a \textit{power function} (hint: there are three!),
+        \item circle everything that's an \textit{exponential function},
+        \item and lastly circle everything that's a \textit{trigonometric function}.
+    \end{enumerate}
+\end{enumerate}
+
+\pagebreak
+
+\section{List of derivative shortcut rules so far}
+
+(We will learn more shortcut rules after spring break!)
+{ \everymath{\displaystyle}
+    \begin{itemize}[label=\(\square\)]
+        \item sum rule: $\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)]$ 
+        \item constant multiple rule: $\diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)]$
+        \item constant function rule: $\diff{x}[c] = 0$
+        \item power rule: $\diff{x}[x^n] = nx^{n-1}$
+        \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
+        \item[] trigonometric function rules: 
+        \begin{itemize}[label=\(\bigcirc\)]
+            \item $\diff{x}[\sin(x)] = \cos(x)$
+            \item $\diff{x}[\cos(x)] = -\sin(x)$
+        \end{itemize}
+        \item product rule: $\diff{x}[f(x) \cdot g(x)] = \diff{x}[f(x)] \cdot g(x) + \diff{x}[g(x)] \cdot f(x)$
+        \item quotient rule: $\diff{x}\left[\frac{f(x)}{g(x)}\right] 
+        = \frac{g(x) \cdot \diff{x}[f(x)] - f(x) \cdot \diff{x}[g(x)]}{[g(x)]^2}$
+    \end{itemize}
+}
+
+\end{document}
