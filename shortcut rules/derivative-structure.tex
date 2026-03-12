@@ -11,15 +11,40 @@ So exactly the hard part about learning derivative shortcut rules is figuring ou
 
 Identifying \textbf{algebraic structure} takes some practice! Let's get into it with this problem set.
 
-You will need 
-NUMBER!!!! 
-different color pens or pencils, and I recommend printing this sheet out and writing on it directly.
+You will need six
+different color pens, pencils, highlighters, or whatever, and I recommend printing this sheet out and writing on it directly.
 
 \hrulefill
 
+First, here is a reference list of all the derivative shortcut rules we know so far. (We'll learn more shortcut rules after spring break!)
+{ \everymath{\displaystyle}
+    \begin{itemize}[label=\(\square\)]
+        \item sum rule: 
+        \[\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)] \]
+        \item constant multiple rule: if $c$ is a constant, then
+        \[ \diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)] \]
+        \item constant function rule: if $c$ is a constant, then
+        \[\diff{x}[c] = 0\]
+        \item power rule: 
+        \[\diff{x}[x^n] = nx^{n-1}\]
+        \item exponential function rule: 
+        \[\diff{x}[a^x] = a^x\cdot\ln(a)\]
+        \item[] trigonometric function rules: 
+        \begin{itemize}[label=\(\bigcirc\)]
+            \item $\diff{x}[\sin(x)] = \cos(x)$
+            \item $\diff{x}[\cos(x)] = -\sin(x)$
+        \end{itemize}
+        \item product rule (aka rule for functions that are multiplied): 
+        \[\diff{x}[f(x) \cdot g(x)] = \diff{x}[f(x)] \cdot g(x) + \diff{x}[g(x)] \cdot f(x)\]
+        \item quotient rule (aka rule for functions that are divided): 
+        \[\diff{x}\left[\frac{f(x)}{g(x)}\right] 
+        = \frac{g(x) \cdot \diff{x}[f(x)] - f(x) \cdot \diff{x}[g(x)]}{[g(x)]^2}\]
+    \end{itemize}
+}
+
 \begin{enumerate}[leftmargin=15pt]
     \item Consider the function 
-    \[\scaleto{f(x) = \frac{7}{x} - 7^x + 3x^7 - 2\ \sin(x)+ \sqrt{x}}{30 pt} \]
+    \[\scaleto{f(t) = \frac{7}{t} - 7^t + 3t^7 - 2\, \sin(t)+ \sqrt{t}}{40 pt} \]
     In different colors for each:
     \begin{enumerate}[(a), leftmargin=15pt]
         \item circle anywhere that functions are being \textit{added or subtracted} to make a bigger function,
@@ -28,29 +53,42 @@ different color pens or pencils, and I recommend printing this sheet out and wri
         \item circle everything that's an \textit{exponential function},
         \item and lastly circle everything that's a \textit{trigonometric function}.
     \end{enumerate}
+    Finally, now that you have done all this circling, find $\displaystyle\diff{t} [f(t)]$ using the appropriate shortcut rules. The more work you can show, the more confidence you will gain in the process!
+    \pagebreak
+
+    \renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+
+    \item Consider the function\footnote{I pulled this function from \href{https://library.tbil.org/2025/calculus/exercises/\#/bank/DF4/1/}{CheckIt practice problems DF4}!} 
+    \[\scaleto{g(x) = (2x^2 - 5x - 3) \cos(x)}{30 pt} \]
+    In different colors for each:
+    \begin{enumerate}[(a), leftmargin=15pt]
+        \item circle anywhere that functions are being \textit{multiplied} to make a bigger function,
+        \item circle anywhere that functions are being \textit{added or subtracted} to make a bigger function,
+        \item circle everything that's a \textit{constant multiple} of some function,
+        \item circle everything that's a \textit{power function} (hint: there are two!),
+        \item circle everything that's a \textit{constant function},
+        \item and lastly circle everything that's a \textit{trigonometric function}.
+    \end{enumerate}
+    Finally, now that you have done all this circling, find $\displaystyle\diff{x} [g(x)]$ using the appropriate shortcut rules. The more work you can show, the more confidence you will gain in the process!
+    \vfill
+
+    \pagebreak
+
+    \item Consider the function\footnote{This function is also from \href{https://library.tbil.org/2025/calculus/exercises/\#/bank/DF4/1/}{CheckIt practice problems DF4}!} 
+    \[\scaleto{h(y) = \dfrac{e^y}{3y^2+3y-5}}{50 pt} \]
+    In different colors for each:
+    \begin{enumerate}[(a), leftmargin=15pt]
+        \item circle anywhere that functions are being \textit{divided} to make a bigger function,
+        \item circle anywhere that functions are being \textit{added or subtracted} to make a bigger function,
+        \item circle everything that's a \textit{constant multiple} of some function,
+        \item circle everything that's a \textit{power function} (hint: there are two!),
+        \item circle everything that's a \textit{constant function},
+        \item and lastly circle everything that's an \textit{exponential function}.
+    \end{enumerate}
+    Finally, now that you have done all this circling, find $\displaystyle\diff{y} [h(y)]$ using the appropriate shortcut rules. The more work you can show, the more confidence you will gain in the process!
+    \vfill
+
 \end{enumerate}
 
-\pagebreak
-
-\section{List of derivative shortcut rules so far}
-
-(We will learn more shortcut rules after spring break!)
-{ \everymath{\displaystyle}
-    \begin{itemize}[label=\(\square\)]
-        \item sum rule: $\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)]$ 
-        \item constant multiple rule: $\diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)]$
-        \item constant function rule: $\diff{x}[c] = 0$
-        \item power rule: $\diff{x}[x^n] = nx^{n-1}$
-        \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
-        \item[] trigonometric function rules: 
-        \begin{itemize}[label=\(\bigcirc\)]
-            \item $\diff{x}[\sin(x)] = \cos(x)$
-            \item $\diff{x}[\cos(x)] = -\sin(x)$
-        \end{itemize}
-        \item product rule: $\diff{x}[f(x) \cdot g(x)] = \diff{x}[f(x)] \cdot g(x) + \diff{x}[g(x)] \cdot f(x)$
-        \item quotient rule: $\diff{x}\left[\frac{f(x)}{g(x)}\right] 
-        = \frac{g(x) \cdot \diff{x}[f(x)] - f(x) \cdot \diff{x}[g(x)]}{[g(x)]^2}$
-    \end{itemize}
-}
 
 \end{document}
