@@ -4,7 +4,7 @@
 \renewcommand{\blue}[1]{\textcolor{blue}{\boxed{#1}}}
 
 \begin{document}
-\section{PS6: Derivative shortcut rules}
+\section{PS7: Derivative shortcut rules}
 
 \textbf{Instructions:} 
 In this Problem Set, you'll show how to find derivatives \textbf{step-by-step}, carefully listing out all of your steps. I am being so annoying about making you take very small steps, because it's a good way to get comfortable with all the shortcut rules.
@@ -64,11 +64,11 @@ Differentiate \(h(p) = \dfrac{(2 p - 1)^{1/4}}{\cos(p + 5)}\).
 Differentiate \(f(q)=(\cos q)\left(\sin {\left(\frac{2}{\pi} q\right)}\right)\).
 \vskip 1em 
 \item
-Differentiate \(G = p x^5 + q x^3 - x^r\), \\
+Differentiate \(G(x) = p x^5 + q x^3 - x^r\), \\
 where \(p,q\) and \(r\) are constants.
 \vskip 1em 
 \item
-Differentiate \(V = \left(3 x - \frac14 \right)^{-4} - (5x)^{5/4}\).
+Find the derivative of \\ \(V(x) = \left(3 x - \frac14 \right)^{-4} - (5x)^{5/4}\).
 \vskip 1em 
 \item
 Find $\dfrac{dh}{dt}$ if \(h(t) = 7^t \sin(t) + t^7 \cos(t)\).
@@ -90,14 +90,14 @@ I am going to need the following derivative rules:
 \begin{multicols}{3}
 	\begin{itemize}
 		\item quotient rule
-		\item trig function rule (sine)
+		\item trig function rule \\
+        (the one for $\cos(\ldots)$)
 		\item chain rule
 		\item power rule
 		\item sum rule
 		\item constant function rule
 		\item exponential function rule
 		\item constant multiple rule
-		\item[]
 	\end{itemize}
 \end{multicols}
 Now I will find the derivative, step by step, and 
@@ -124,7 +124,7 @@ I am highlighting changes from the previous line in blue and with a box around i
 & \textrm{(constant multiple rule, } \\
 && \textrm{power rule)} \\ \\
 &= \frac{[e^{-3t}] \cdot
-         \blue{[-\sin(t^2-1)\cdot\diff{t}(t^2-1)]} - 
+         \blue{\left[-\sin(t^2-1)\cdot\diff{t}(t^2-1)\right]} - 
 		 [\cos(t^2-1)]\cdot 
          [e^{-3t}\cdot(-3)]}
 		{[e^{-3t}]^2}
@@ -158,7 +158,7 @@ Here is the list of shortcut rules. Check them off as you use them. Keep this li
         \item sum rule: $\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)]$ 
         \item constant multiple rule: $\diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)]$
         \item constant function rule: $\diff{x}[c] = 0$
-        \item power rule: $\diff{x}[x^n] = nx^{n-1}$
+        \item power function rule: $\diff{x}[x^n] = nx^{n-1}$
         \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
         \item[] trigonometric function rules: 
         \begin{itemize}[label=\(\bigcirc\)]
