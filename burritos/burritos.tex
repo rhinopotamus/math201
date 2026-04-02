@@ -1,6 +1,7 @@
 \input{../header}
 \setlength{\parskip}{.2cm}
 \newcommand{\squiggle}{\sim\mkern-4mu\sim}
+\renewcommand{\blue}[1]{\textcolor{blue}{\boxed{#1}}}
 
 \begin{document}
 \begin{center}
@@ -9,5 +10,96 @@
 
 When we want to take the derivative of a composite function $f(g(x))$, we use the Chain Rule:
 \[\dfrac{d}{dx}\Big[f(g(x))\Big] = f'(g(x)) \cdot g'(x)\]
-Composite functions are like burritos: they are made of a tortilla wrapped around a filling. In the setup $f(g(x))$, I am saying that the filling is $g(x)$ and the tortilla is $f(\squiggle)$.
+Composite functions are like \textbf{burritos}: they are made of a tortilla wrapped around a filling. In the setup $f(g(x))$, I am saying that the tortilla is $f(\squiggle)$ and the filling is $g(x)$.
+
+I am saying this in kind of a weird way, and for a specific reason. I am saying that the tortilla is $f(\squiggle)$, rather than $f(x)$, because I am emphasizing that whatever the input is for the function $f(\squiggle)$, it is in some way \textbf{more complicated} than just plain $x$.
+
+In particular, when we write down a composite function $f(g(x))$, exactly what we are doing is:
+\begin{itemize}
+    \item starting with a plain-old-boring $f(x)$,
+    \item choosing some other function $g(x)$, and most importantly
+    \item \textbf{replacing} the $x$'s in plain-old-boring $f(x)$ by $g(x)$.
+\end{itemize}
+And thus we have created a burrito, where we have taken a tortilla and put in some filling $g(x)$.
+
+\subsubsection*{How to recognize burritos}
+
+A very common question that people have when they are learning the chain rule for the first time is, how do I know what is a burrito and what is not, and how do I tell what is the tortilla and what is the filling?
+
+One way to approach this question is to think about a library of possible plain-old-boring functions to start with. I will in particular suggest looking at the list of derivative rules that are about specific functions: 
+
+\begin{minipage}{0.55\textwidth}
+    \everymath{\displaystyle}
+    \newcommand{\x}{\blue{x}}
+    \newcommand{\diff}[1]{\frac{d}{d#1}}
+    \begin{itemize}[label=\(\square\)]
+        \item power function rule: $\diff{x}[x^n] = nx^{n-1}$
+        \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
+        \item[] trigonometric function rules: 
+        \begin{itemize}[label=\(\bigcirc\)]
+            \item $\diff{x}[\sin(\x)] = \cos(\x)$
+            \item $\diff{x}[\cos(x)] = -\sin(x)$
+            \item $\diff{x}[\tan(x)] = \sec^2(x)$
+        \end{itemize}
+        \item logarithmic function rule: $\diff{x}[\ln(x)] = \frac{1}{x}$
+    \end{itemize}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+Before moving on, take a minute and highlight for yourself the \textbf{variable} in each of these derivative rules. Do this on both sides of the equals sign. I have done this for the one about the sine function as an example.
+\end{minipage}
+
+\pagebreak
+
+\subsubsection*{How to recognize burritos, continued}
+
+So here's the deal: in the context of the chain rule, you can spot a burrito if you see one of these functions, but instead of a just-plain-$x$ (or, y'know, just-plain $t$ or $z$ or whatever letter the variable is), you see another function.
+
+In other words, you are \textbf{expecting} to see a just-plain-$x$ inside some function, but instead you see \textbf{something more complicated}.
+
+Here are some examples, with the filling highlighted:
+
+\begin{multicols}{4}
+    \begin{itemize}
+        \item $\left(\blue{4z^3+77}\right)^{17}$
+        \item $\sin(\blue{7t})$
+        \item $\cos(\blue{\ln(q)})$
+        \item $e^{\ \blue{\scriptstyle{2x+6}}}$
+    \end{itemize}
+\end{multicols}
+
+And here are the corresponding tortillas:
+
+{\renewcommand{\blue}[1]{\squiggle}
+\begin{multicols}{4}
+    \begin{itemize}
+        \item $\left(\blue{4z^3+77}\right)^{17}$
+        \item $\sin(\blue{7x})$
+        \item $\cos(\blue{\ln(x)})$
+        \item $e^{\blue{2x+6}}$
+    \end{itemize}
+\end{multicols}
+}
+
+\subsubsection*{Using the chain rule}
+
+(Placeholder. More to come here!)
+
 \end{document}
+
+
+\begin{minipage}{0.55\textwidth}
+    \everymath{\displaystyle}
+    \newcommand{\x}{\textcolor{blue}{\boxed{x}}}
+    \newcommand{\diff}[1]{\frac{d}{d#1}}
+    \begin{itemize}[label=\(\square\)]
+        \item power function rule: $\diff{x}[\x^n] = n\x^{n-1}$
+        \item exponential function rule: $\diff{x}[a^{\x}] = a^{\x}\cdot\ln(a)$
+        \item[] trigonometric function rules: 
+        \begin{itemize}[label=\(\bigcirc\)]
+            \item $\diff{x}[\sin(\x)] = \cos(\x)$
+            \item $\diff{x}[\cos(\x)] = -\sin(\x)$
+            \item $\diff{x}[\tan(\x)] = \sec^2(\x)$
+        \end{itemize}
+        \item logarithmic function rule: $\diff{x}[\ln(\x)] = \frac{1}{\x}$
+    \end{itemize}
+\end{minipage}
