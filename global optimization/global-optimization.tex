@@ -1,0 +1,93 @@
+\input{../header}
+\usepackage[dvipsnames]{xcolor}
+
+
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+%##################################################################
+\section{Making a sign chart recipe}
+A \textit{sign chart}, as we learned in class by working on \href{https://rhinopotamus.github.io/pdf/highest-and-lowest.pdf}{this handout}, is a labeled number line. \href{https://activecalculus.org/single/sec-3-3-tests.html#Ex-f-from-f-prime}{Here's an example from the textbook, also.} Here's a recipe for making them:
+
+\begin{enumerate}
+    \item Figure out all the critical numbers of $f(x)$:
+    \begin{itemize}
+        \item Find the derivative $f'(x)$ and figure out where $f'(x) = 0$ or does not exist.
+        \item For finding zeroes, it may be useful to review \href{https://spot.pcc.edu/math/orcca/ed2/html/section-solving-quadratic-equations-by-factoring.html}{factoring and the Zero Product Property}.
+        \item For finding places where $f'(x)$ does not exist, think about what could be \textit{bad} $x$-values. Maybe are there things that would make you divide by zero? Or take the square root of a negative number? Or other weird domain issues?
+        \item Remember that the critical numbers are \textit{inputs}.
+    \end{itemize}
+    \item Put the critical numbers on a number line. 
+    \begin{itemize}
+        \item We low-key don't care about any other numbers. In particular, we low-key don't care about endpoints, at least not for now.
+        \item The critical numbers chop up the number line into a bunch of segments between them.
+    \end{itemize}
+    \item Choose your favorite number from each of the segments and plug it into $f'(x)$.
+    \begin{itemize}
+        \item We are making a number line about \textit{slopes}, so we plug into $f'(x)$, not $f(x)$.
+        \item We low-key don't care what \textit{number} comes out of $f'(x)$; we really only care about its \textit{sign}: $+$ or $-$. (That's why this is called a \textit{sign} chart!)
+    \end{itemize}
+    \item Label each segment with the \textit{sign} of $f'(x)$ on that segment.
+    \item Translate the \textit{signs} of $f'(x)$ into the \textit{directions} -- increasing or decreasing -- of $f(x)$.
+\end{enumerate}
+%##################################################################
+\hrulefill
+\section{Finding extreme values recipe}
+I like the version of this recipe that we came up with in class even better than the fancy version that is in the textbook. Here's our in-class version:
+
+\begin{enumerate}
+    \item Figure out all the critical numbers of $f(x)$. 
+    \begin{itemize}
+        \item I am once again emphasizing that the critical numbers are \textit{inputs}.
+    \end{itemize}
+    \item Plug the critical numbers into the original function $f(x)$.
+    \begin{itemize}
+        \item The outputs that result are called the \textit{critical values}.
+        \item What would happen if you accidentally plugged the critical numbers into $f'(x)$? 
+    \end{itemize} 
+    \item The endpoint numbers are also inputs, so plug them into the original function $f(x)$ too.
+    \item Compare all these original $f(x)$ outputs and find the biggest and the smallest.
+\end{enumerate}
+
+
+\pagebreak
+
+\section{PS\#10: Global optimization}
+
+For each of the functions below, which come from \href{https://activecalculus.org/single/sec-3-5-optimization.html#act-3-5-2}{Activity 3.5.3}:
+\begin{enumerate}
+    \item Find the critical numbers \colorbox[HTML]{bfedd2}{by hand using algebra.}
+    \item Draw a \colorbox[HTML]{c2e0f4}{sign chart.}
+    \item Find the absolute maximum and absolute minimum using the \colorbox[HTML]{eccafa}{``finding extreme values recipe.''}
+    \item Finally, \colorbox[HTML]{f8cac6}{check your work by using Desmos} to graph the function on the restricted domain.
+    \begin{itemize}
+        \item Remember you can use the curly brackets to indicate a restricted domain.
+        \item Include a Desmos screenshot in your work for each of these six functions.
+    \end{itemize}
+\end{enumerate}
+
+\hrulefill
+
+{ \everymath{\displaystyle}
+\vspace{1em}
+Here are the functions to do these four steps on:
+
+\begin{enumerate}[(a)]
+    \item $h(x) = xe^{-x}$ on the interval $[0, 3]$
+    \item $p(t) = \sin(t) + \cos(t)$ on the interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
+    \item $q(x) = \frac{x^2}{x-2}$ on the interval $[3, 7]$
+    \item $f(x) = 4 - e^{-(x-2)^2}$ with no domain restriction (so, no endpoints!)
+    \item $h(x) = xe^{-ax}$ on the interval $\left[0, \dfrac2a\right]$, where $a > 0$ is some constant
+    \item $f(x) = b - e^{-(x-a)^2}$ with no domain restriction, where $a$ and $b$ are some positive constants
+\end{enumerate}
+}
+
+\hrulefill
+\vspace{1em}
+
+For part (e) and part (f), when you graph these in Desmos, you will probably be prompted to create sliders. This is a fun way to play around and see what different values of $a$ and $b$ do to the shape of the graph.
+
+\end{document}
