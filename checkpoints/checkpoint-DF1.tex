@@ -163,13 +163,68 @@ a graph of this function is provided below.
     \vfill
     \item On the graph above, carefully sketch the \textit{tangent} line to $s(t)$ at $t=1$.
     \item On the graph above, carefully sketch a \textit{secant} line through the point on the graph at $t=1$ and a second nearby point.
-    \item Compute the slope of your secant line. Show your work. 
+    \item Compute the slope of your secant line. Show your work and \textbf{include units}. 
 
     \vspace{-0.7em}
     {\tiny Hints: rise over run; one of your two $y$-values is $s(1)$, which you computed in part (a).}
     \vfill
     \item Use shortcut rules to find $s'(t)$, and compute $s'(1)$; show your work. Compare your result here to your result in part (d). Do these two numbers make sense together? Why?
     \vfill
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Learning target DF1, version 5}
+
+Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.
+
+\hrulefill
+
+
+\everymath{\displaystyle}
+
+Suppose that you know the following values of some function $f(x)$:
+
+\[
+\begin{array}{c||r|r|r}
+      x  &  1 &  1.5   &  2 \\\hline
+    f(x) & -0.8 & -1   & -1.6
+\end{array}
+\]
+\begin{enumerate}[leftmargin=0pt]
+
+\item Plot these points and sketch a plausible graph of $f(x)$.
+
+\begin{tikzpicture}
+    \begin{axis}[
+        width=\textwidth, height=10cm,
+        xmin=-0.25, xmax=3.25, ymin=-2.5, ymax=0.25,
+        xtick distance = 1, ytick distance = 1,
+        minor tick num = 3,
+        xticklabel style={anchor=north west},
+        yticklabel style={anchor=north east},
+        major grid style={thin, black!50},
+        grid=both, 
+        axis lines=center, axis line style = very thick]
+        \draw (0,0) grid (3, -3);
+    \end{axis}
+\end{tikzpicture}
+
+\item On your graph above, draw a plausible tangent line to the graph of $f(x)$ at $x=1.5$.
+
+\item Use a central difference to estimate $f'(1.5)$. Draw the corresponding secant line on your graph.
+\vfill
+
+\item Compute another, different estimate of $f'(1.5)$. Draw the corresponding secant line on your graph.
+
+\vfill
+
+\item Which one of your approximations is the best? How do you know?
+
+\vspace{1cm}
+
 \end{enumerate}
 
 \end{document}
