@@ -1,0 +1,95 @@
+\input{../header}
+\chead{\textbf{Preview for 9/3}}
+
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+%##################################################################
+\def\arraystretch{3}
+We computed a bunch of average velocities (that's what ``AV'' stands for, btw!) for the function $s(t) = 64-16(t-1)^2$ involving the point at $t=0.8$. Here are the ones where we went \textit{forward} from $t=0.8$:
+
+{\large
+\begin{tabular}{lllll}
+    Time interval &=& $[0.8, 0.8+h]$ & AV setup & Result \\\hline
+    $[0.8, 1.2]$ &=& $ [0.8, 0.8+(0.4)]$ &
+    $\dfrac{s(1.2) - s(0.8)}{1.2 - 0.8}$ &
+    0 ft/s \\
+    $[0.8, 0.9]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    4.8 ft/s \\
+    $[0.8, 0.81]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    6.24 ft/s \\
+    $[0.8, 0.801]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    6.384 ft/s \\
+\end{tabular}
+}
+
+\vspace{2em}
+
+We also computed some going \textit{backward} from $t=0.8$, but also I'm going to write them funny because it doesn't matter what order you write the two times $t=a$ and $t=b$:
+
+{\large
+\begin{tabular}{lllll}
+    Time interval &=& $[0.8, 0.8+h]$ & AV setup & Result \\\hline
+    $[0.8, 0.4]$ &=& $ [0.8, 0.8+(-0.4)]$ &
+    $\dfrac{s(0.4) - s(0.8)}{0.4 - 0.8}$ &
+    12.8 ft/s \\
+    $[0.8, 0.7]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    8 ft/s \\
+    $[0.8, 0.79]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    6.56 ft/s \\
+    $[0.8, 0.799]$ &=& $ [0.8, 0.8+\rule{1cm}{0.15mm}]$ &
+    $\dfrac{s(\hspace{1cm}) - s(0.8)}{\rule{1cm}{0.15mm} - 0.8}$ &
+    6.416 ft/s \\
+\end{tabular}
+}
+
+\pagebreak
+
+Then we did some algebra. We noticed that the setup of all of these average velocities is the same:
+{\large
+\[ AV_{[0.8,\  0.8+h]} = \dfrac{s(0.8 + h) - s(0.8)}{(0.8+h) - 0.8} \]
+}
+
+To figure out what $s(0.8 + h)$ was, we replaced the $t$ in $s(t) = 64 - 16(t-1)^2$ by $(0.8 + h)$:
+
+\[s(0.8 + h) = 64 - 16\Big[ (0.8 + h) - 1 \Big]^2\]
+Let's simplify this as much as possible. 
+
+\begin{itemize}
+\item First, simplify inside the $\big[\qquad \big]$ by combining the two numbers: $0.8 - 1 = $
+\item Next, let's deal with the ``squared.'' Remember that $(\text{stuff})^2$ means $(\text{stuff}) \cdot (\text{stuff})$, and then use FOIL or the box method to multiply this out.
+\item PEMDAS says our next thing is to multiply by \textbf{negative} 16. (Do you see why?) Distribute!
+\item Finally, add 64.
+\end{itemize}
+Did you get that the most simplified version of $s(0.8+h) = 63.36 + 6.4h - 16h^2$?
+
+\hrulefill
+
+Where were we going with this, anyway? Oh right, we were computing $AV_{[0.8,\  0.8+h]}$. Replace $s(0.8 +h)$ in that big equation above by this simpler version.
+{\large
+\[ AV_{[0.8,\  0.8+h]} = \dfrac{\phantom{63.36 + 6.4h - 16h^2} - s(0.8)}{(0.8+h) - 0.8} \]
+}
+What else can you do in that big equation to simplify further?
+{\large
+\[ AV_{[0.8,\  0.8+h]} = \phantom{\dfrac{\phantom{63.36 + 6.4h - 16h^2} - s(0.8)}{(0.8+h) - 0.8}} \]
+}
+
+Notice that I kept the left-hand side of that equation the same, because that's our label that tells us what we are doing. 
+
+\hrulefill
+
+If you do legal algebra all the way through, you should end up with the following result:
+{\large
+\[AV_{[0.8,\  0.8+h]} = 6.4 - 16h\]
+}
+
+What does this \textit{mean}? I guess $6.4-16h$ is a recipe for calculating something, but calculating what? What's $AV_{[0.8,\  0.8+h]}$? An average velocity, apparently, but between what two times?
+\end{document}
