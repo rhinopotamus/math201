@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
-\usepackage{ifpdf,amsmath, amssymb, comment, color, graphicx, stmaryrd,setspace,tikz, fancyhdr, wrapfig, textcomp, siunitx, mathptmx, pdfpages, cancel, multicol}
+\usepackage{amsmath, amssymb, color, graphicx, setspace, fancyhdr, siunitx, mathptmx, pdfpages, cancel, multicol}
+\usepackage{tikz}
 \usepackage[shortlabels]{enumitem}
 \usepackage{hyperref}
 \hypersetup{
@@ -37,7 +38,7 @@
 
 \newenvironment{red}{\color{red}}{\ignorespacesafterend}
 \newenvironment{blue}{\color{blue}}{\ignorespacesafterend}
-\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newenvironment{green}{\color{green}}{\ignorespacesafterend}
 \renewcommand{\section}[1]{\begin{center} \textbf{#1} \\\end{center}}
 %
 \hyphenpenalty=5000
