@@ -4,80 +4,92 @@
 \renewcommand{\blue}[1]{\textcolor{blue}{\boxed{#1}}}
 
 \begin{document}
-\section{PS7: Derivative shortcut rules}
+\section{PS7: \textit{All} the derivative shortcut rules!}
 
-\textbf{Instructions:} 
-In this Problem Set, you'll show how to find derivatives \textbf{step-by-step}, carefully listing out all of your steps. I am being so annoying about making you take very small steps, because it's a good way to get comfortable with all the shortcut rules.
+\textbf{Introduction:} 
+In this Problem Set, you'll show how to find derivatives \textbf{step-by-step}, carefully listing out all of your steps, and using good derivative grammar. 
+\begin{itemize}
+    \item I am going to be so annoying about making you take \textbf{very small steps}, because it's a good way to get comfortable with all the shortcut rules.
+    \item I am also going to be so annoying about \textbf{good grammar}, because thinking carefully about what letter is the variable is important (and will be even more important next chapter).
+    \item Lastly, I am going to be so annoying about \textbf{PEMDAS issues}, because it is important for us to understand that \[2y + 4 \cdot (\cos(y))\] is not the same as \[(2y + 4)\cdot(\cos(y)),\] but it is even more important for us to understand \textbf{why}.
+\end{itemize}
 
+\hrulefill
+
+\textbf{Instructions:}
 For each problem you choose:
 \begin{enumerate}[(a)]
-	\item Refer to the list on the next page to identify \textbf{all} the derivative rules you're going to need to use for your problem.
+	\item Refer to the reference list of shortcut rules to identify \textbf{all} the derivative rules you're going to need to use for your problem.
+    \begin{itemize}
+        \item Watch out for the sneaky structure rules that you use without even noticing them!
+    \end{itemize}
     \item Make your sheet of paper into two columns. 
     \begin{itemize}
         \item In the left column, do tiny derivative steps. 
         \item In the right column, list all the rules you are using in that step.
-        \item Look at the example on the next page to see how detailed your steps should be.
+        \item Look at the example on the back of the reference list page (the one we did as a warmup on Thursday) to see how tiny your steps should be.
     \end{itemize}
-	\item Repeat with a new problem until you have checked off \textbf{all} of the derivative rules in the reference list at least once.
+	\item Repeat with a new problem until you have checked off \textbf{all 12 of the shortcut rules} in the reference list at least once.
     \begin{itemize}
         \item Yes, all three of the rules for trigonometric functions count separately.
         \item I am pretty sure you will need to do at least five problems.
         \item If you do extra problems, I will give you a sticker.
     \end{itemize}
 \end{enumerate}
-Throughout, carefully label any derivative you find by name, using correct derivative notation.
-\vfill
-\hrulefill
+Throughout, label your work with derivative signs, using correct derivative notation and grammar.
 
-Here are the problems you can choose from:
-\begin{multicols}{2}
+\pagebreak
+
+Here are the problems you can choose from. 
+
+Remember that ``differentiate'' is the verb for ``derivative.'' (You would think the verb would be ``derive'', but that actually means something else.)
+
 \begin{enumerate}[{\bf (1)}]
 \item
-Find $\dfrac{dy}{dx}$ if \(y=(2x-1)^8-x+e\).
+Find $\dfrac{dy}{dx}$ if \(y=(2x-1)^7-x+e\).
 \vskip 1em 
 \item 
-If \(L(y) = (\tan(y))^{3} + \tan(3)\), find $L'(y)$.
+If \(L(y) = \tan^4(y) + \tan(4)\), find $L'(y)$. (Remember what $\tan^4(y)$ means?)
 \vskip 1em 
 \item
-Find $B'(x)$ if \(B(x) = \cos(e^{3 x})\).
+Find $B'(x)$ if \(B(x) = \cos(e^{5 x})\).
 \vskip 1em 
 \item
-Differentiate \(W(x) =\dfrac{x^4 - 6x + 10}{\sqrt{7x + 8}}\).
+Differentiate \(W(x) =\dfrac{x^2 - 5x + 11}{\sqrt{8x + 7}}\).
 \vskip 1em 
 \item
-Differentiate \(g(q) = \dfrac{q^{5}}{\ln(q^5 + \frac13)}\).
+Differentiate \(g(q) = \dfrac{q^{3}}{\ln\left(q^3 + \dfrac13\right)}\).
 \vskip 1em 
 \item
-Differentiate \(B(x) = (C e^{3x} - D)(2 x)\), \\
+Differentiate \(B(x) = (C e^{4x} - D)(3 x)\), 
 where \(C\) and \(D\) are constants.
 \vskip 1em 
 \item
-Find \(f'(y)\) if \(f(y) = \left(\sqrt{y^4 + 1}\right) \left(\ln\left(\dfrac{y}{2}\right)\right)\).
+Find \(f'(y)\) if \(f(y) = \left(\sqrt{y^3 + 1}\right) \left(\ln\left(\dfrac{y}{4}\right)\right)\). (Note: This doesn't require the quotient rule.)
 \item
 Find $\dfrac{dB}{dx}$ if 
-\(B = \dfrac{e^{x + \pi}}{\sin(\pi x)}\).
+\(B = \dfrac{e^{2x + \pi}}{\sin(\pi x)}\).
 \vskip 1em 
 \item 
-Differentiate \(h(p) = \dfrac{(2 p - 1)^{1/4}}{\cos(p + 5)}\).
+Differentiate \(h(p) = \dfrac{(3 p - 1)^{1/4}}{\cos(2p -7)}\).
 \vskip 1em 
 \item
-Differentiate \(f(q)=(\cos q)\left(\sin {\left(\frac{2}{\pi} q\right)}\right)\).
+Differentiate \(f(q)=\cos(q) \sin \left(\dfrac{4}{\pi}\ q\right)\).
 \vskip 1em 
 \item
-Differentiate \(G(x) = p x^5 + q x^3 - x^r\), \\
-where \(p,q\) and \(r\) are constants.
+Differentiate \(G(x) = p x^4 + q x^2 - x^r\), 
+where \(p,\ q\) and \(r\) are constants.
 \vskip 1em 
 \item
-Find the derivative of \\ \(V(x) = \left(3 x - \frac14 \right)^{-4} - (5x)^{5/4}\).
+Find the derivative of \(V(x) = \left(5 x - \dfrac17 \right)^{-10} - (2x)^{9/2}\).
 \vskip 1em 
 \item
-Find $\dfrac{dh}{dt}$ if \(h(t) = 7^t \sin(t) + t^7 \cos(t)\).
+Find $\dfrac{dh}{dt}$ if \(h(t) = 4^t \cos(t) + t^4 \sin(t)\).
 \vskip 1em 
 \item
-Differentiate \(h(t) = -3(2t^4 + 7)^4 + 3\).
+Differentiate \(h(t) = -5(2t^4 -3)^9 + 7\).
 \end{enumerate}
-\end{multicols}
-\vfill 
+
 
 \pagebreak
 
@@ -90,19 +102,18 @@ I am going to need the following derivative rules:
 \begin{multicols}{3}
 	\begin{itemize}
 		\item quotient rule
+		\item chain rule
+		\item sum rule
+		\item constant multiple rule
 		\item trig function rule \\
         (the one for $\cos(\ldots)$)
-		\item chain rule
-		\item power rule
-		\item sum rule
+		\item power function rule
 		\item constant function rule
 		\item exponential function rule
-		\item constant multiple rule
 	\end{itemize}
 \end{multicols}
-Now I will find the derivative, step by step, and 
-explain what rules I am using in every step.
-I am highlighting changes from the previous line in blue and with a box around it.
+Now, explain what rules are happening in each step, as highlighted by the blue boxes. 
+{\renewcommand{\textrm}{\textcolor{white}}
 \begin{align*}
 \textbf{Steps}& 
 & \textbf{Rules} \\\hline
@@ -122,7 +133,7 @@ I am highlighting changes from the previous line in blue and with a box around i
 		 [e^{-3t}\cdot\blue{(-3)}]}
 		{[e^{-3t}]^2} 
 & \textrm{(constant multiple rule, } \\
-&& \textrm{power rule)} \\ \\
+&& \textrm{power function rule)} \\ \\
 &= \frac{[e^{-3t}] \cdot
          \blue{\left[-\sin(t^2-1)\cdot\diff{t}(t^2-1)\right]} - 
 		 [\cos(t^2-1)]\cdot 
@@ -142,58 +153,67 @@ I am highlighting changes from the previous line in blue and with a box around i
 		 [\cos(t^2-1)]\cdot 
          [e^{-3t}\cdot(-3)]}
 		{[e^{-3t}]^2}
-& \vspace{-2em} \textrm{(power rule,} \\
+& \vspace{-2em} \textrm{(power function rule,} \\
 && \vspace{-2em} \textrm{constant function rule)}
 \end{align*}
-
-\vspace{-0.1em}
+%\vspace{-1em}
 
 And now I am done, because I have no more ``please take the derivative of'' signs left. Yay!
-
+}
 \pagebreak
 
-\section{List of derivative shortcut rules}
+\section{Reference list of derivative shortcut rules}
 
-Here is the list of shortcut rules. Check them off as you use them. Keep this list for reference!
+Here is the list of all the shortcut rules we've learned. Check them off as you use them. 
+
+Keep this list for reference!
 { \everymath{\displaystyle}
+    \subsubsection*{Structure rules}
     \begin{itemize}[label=\(\square\)]
         \item sum rule: $\diff{x}[f(x)+g(x)] = \diff{x}[f(x)]+\diff{x}[g(x)]$ 
         \item constant multiple rule: $\diff{x}[c\cdot f(x)] = c\cdot\diff{x}[f(x)]$
-        \item constant function rule: $\diff{x}[c] = 0$
-        \item power function rule: $\diff{x}[x^n] = nx^{n-1}$
-        \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
-        \item[] trigonometric function rules: 
-        \begin{itemize}[label=\(\bigcirc\)]
-            \item $\diff{x}[\sin(x)] = \cos(x)$
-            \item $\diff{x}[\cos(x)] = -\sin(x)$
-            \item $\diff{x}[\tan(x)] = \sec^2(x)$
-        \end{itemize}
+        
         \item product rule: $\diff{x}[f(x) \cdot g(x)] = \diff{x}[f(x)] \cdot g(x) + \diff{x}[g(x)] \cdot f(x)$
         \item quotient rule: $\diff{x}\left[\frac{f(x)}{g(x)}\right] 
         = \frac{g(x) \cdot \diff{x}[f(x)] - f(x) \cdot \diff{x}[g(x)]}{[g(x)]^2}$
         \item chain rule: $[f(g(x))]' = f'(g(x)) \cdot g'(x)$, or in other words, $\dfrac{d}{dx}\left[ f(g(x)) \right] = f'(g(x)) \cdot \dfrac{d}{dx}\left[ g(x) \right]$
-        \item logarithmic function rule: $\diff{x}[\ln(x)] = \frac{1}{x}$
-    \end{itemize}
-    \hrulefill
-
-    Just for reference, here are a few more that come up sometimes. They get used much less and they don't show up on this problem set; I would just be sad if I didn't write them down.
-    \begin{multicols}{2}
         
-        \begin{itemize}[label=\(\centerdot\)]
+    \end{itemize}
+
+    \begin{minipage}{0.55\textwidth}
+        \subsubsection*{Function rules}
+        \begin{itemize}[label=\(\square\)]
+            \item constant function rule: $\diff{x}[c] = 0$
+            \item power function rule: $\diff{x}[x^n] = nx^{n-1}$
+            \item exponential function rule: $\diff{x}[a^x] = a^x\cdot\ln(a)$
+            \item[] trigonometric function rules: 
+            \begin{itemize}[label=\(\bigcirc\)]
+                \item $\diff{x}[\sin(x)] = \cos(x)$
+                \item $\diff{x}[\cos(x)] = -\sin(x)$
+                \item $\diff{x}[\tan(x)] = \sec^2(x)$
+            \end{itemize}
+            \item logarithmic function rule: $\diff{x}[\ln(x)] = \frac{1}{x}$
+        \end{itemize}
+    \end{minipage}
+    \fbox{
+    \begin{minipage}{0.45\textwidth}
+        \section{Some extra function rules} 
+        These ones are not on this homework and generally come up less frequently, but I would get points on my math license if I didn't at least say them.
+        \begin{itemize}[leftmargin=15pt, label=\(\centerdot\)]
             \item inverse trigonometric function rules: 
-            \begin{itemize}[label=\textopenbullet, series=whale]
+            \begin{itemize}[label=\textopenbullet]
                 \item $\displaystyle \diff{x}[\arctan(x)] = \frac{1}{1+x^2}$
                 \item $\displaystyle \diff{x}[\arcsin(x)] = \frac{1}{\sqrt{1-x^2}}$
             \end{itemize}
-            \vfill\null
             \item rules for other trigonometric functions:
-            \begin{itemize}[resume*=whale]
+            \begin{itemize}[label=\textopenbullet]
                 \item $\diff{x}[\cot(x)]=-\csc^2(x)$
                 \item $\diff{x}[\sec(x)]=\sec(x)\tan(x)$
                 \item $\diff{x}[\csc(x)]=-\csc(x)\cot(x)$
             \end{itemize}
         \end{itemize}
-    \end{multicols}
+    \end{minipage}
+    }
 }
 
 \end{document}
