@@ -29,12 +29,11 @@ Chapter 1 scorecard:
 \end{center}
 Chapter 2 scorecard:
 \begin{center}
-    \begin{tabular}{|m{3.75cm}|*{6}{m{1.75cm}|}} \hline
-        Learning target: & DF3 & DF4 & DF5 & DF6 & DF7 & DF8 \\\hline
-        Your confidence level before starting (0-5): & &&&&&\\\hline
-        Your confidence level after the quiz (0-5):  & &&&&&\\\hline
+    \begin{tabular}{|m{3.75cm}|*{5}{m{2cm}|}} \hline
+        Learning target: & 2.1 & 2.3 & 2.5 & 2.7 & 2.all  \\\hline
+        Your confidence level before starting (0-5): & &&&&\\\hline
+        Your confidence level after the quiz (0-5): & &&&&\\\hline
         The mark you earned on this attempt: 
-        & Success! \newline Try again!
         & Success! \newline Try again!
         & Success! \newline Try again!
         & Success! \newline Try again!
@@ -73,297 +72,129 @@ Have fun and do your best! I believe in u $\heartsuit$
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% auto-generated from TBIL checkit bank
-%%% https://library.tbil.org/2025/calculus/exercises/#/bank/
-\section{Learning target DF3, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
- Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (constant multiple, sum/difference, etc.) you are using in your work.
+\section{Learning target 2.1, version 1}
 
- SOME KIND OF INSTRUCTION NOT TO USE QUOTIENT ETC
+Compute derivatives using basic function rules, the constant multiple rule, and the sum rule.
+
+\hrulefill
+
+Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (constant multiple, sum/difference, etc.) you are using in your work.
 
 \begin{enumerate}
-\item
-\stxKnowl{
- \(f(x) = 2 \, \cos\left(x\right) + 4 \, e^{x}\) 
-
-\stxOuttro{
- \[f'(x) = 4 \, e^{x} - 2 \, \sin\left(x\right)\] 
-
-}
-}
-\vfill 
-\item
-\stxKnowl{
- \(h(t) = \sqrt[3]{t^4} + \frac{4}{t^{4}}\)
-
-\stxOuttro{
- \[h'(t) = \frac{4}{3} \, t^{\frac{1}{3}} - \frac{16}{t^{5}}\] 
-
-}
-}
-\vfill 
-\item
-\stxKnowl{
- \(g(w) = 6 \, w^{3} - 2 \, w^{2} - 9 \, w - 2\)
-
-\stxOuttro{
- \[g'(w) = 18 \, w^{2} - 4 \, w - 9\] 
-
-}
-}
-\vfill 
-\item 
-\stxKnowl{
- \(C(t) = \dfrac{\sqrt{\dfrac{\arcsin(2\pi+3)}{\arcsin(3\pi-2)} + 
-                 e^{i \pi/2}\cdot \cos\left(-\dfrac{34}{\sqrt{5}}\right)}}
-                {\ln\Big(\cos\big(\sin(\cos(7))\big)\Big) \cdot
-                \arctan(7^e+e^7)}\) \quad
+    \item \(f(x) = 2 \, \cos\left(x\right) + 4 \, e^{x}\) 
+    \vfill
+    \item \(h(t) = \sqrt[3]{t^4} + \frac{4}{t^{4}}\) \quad (Don't use the quotient rule or the chain rule.)
+    \vfill
+    \item \(g(w) = 6 \, w^{3} - 2 \, w^{2} - 9 \, w - 2\)
+    \vfill
+    \item \(C(t) = 64(e^7 + 7^e)- \dfrac{\sqrt[27]{193262}}{16-\pi^2}\cdot\sin(4)\) \quad
 (Hint: Look carefully!)
-
-\stxOuttro{
- The variable is $t$, so this is a constant function.
-
-}
-}
 \end{enumerate}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Learning target DF4, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
- Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (product, quotient, sum and difference, etc.) you are using.
+\section{Learning target 2.3, version 1}
 
-\begin{enumerate}
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} g(x)= \frac{\log\left(x\right)}{2 \, x^{2} + 6 \, x - 3}\)
+Compute derivatives using the product and quotient rules.
 
-\stxOuttro{
-\[\renewcommand{\log}{\ln} g' (x)= -\frac{2 \, {\left(2 \, x + 3\right)} \log\left(x\right)}{{\left(2 \, x^{2} + 6 \, x - 3\right)}^{2}} + \frac{1}{{\left(2 \, x^{2} + 6 \, x - 3\right)} x}\]
+\hrulefill
 
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} f(x)= {\left(x^{2} - 2 \, x - 4\right)} \cos\left(x\right)\)
+\begin{enumerate}[leftmargin=15pt]
+    \item Consider the function $g(t) = 7\cdot t^4$.
+    \begin{enumerate}
+        \item Compute $g'(t)$ using the product rule. Simplify as much as possible.
+        \vfill
+        \item Now compute $g'(t)$ again, \textit{without} the product rule.
+        \vfill
+        \item Are both ways \textit{correct}? Which way do you \textit{prefer}?
+        \vfill
+    \end{enumerate}
+    \item Consider the function $f(t) = \dfrac{t^4}{7}$. 
 
-\stxOuttro{
-\[\renewcommand{\log}{\ln} f' (x)= 2 \, {\left(x - 1\right)} \cos\left(x\right) - {\left(x^{2} - 2 \, x - 4\right)} \sin\left(x\right)\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} h(t)= -\frac{3 \, t^{2} + 2 \, t + 3}{t^{3}}\)
-
-\stxOuttro{
-\[\renewcommand{\log}{\ln} h' (t)= \frac{3 \, t^{2} + 4 \, t + 9}{t^{4}}\]
-
-}
-}
-\vfill
+    \begin{enumerate}
+        \item Compute $f'(t)$ using the quotient rule. Simplify as much as possible.
+        \vfill
+        \item Now compute $f'(t)$ again, \textit{without} the quotient rule.\\
+        (Hint: What's another way to say ``divide by 7''?)
+        \vfill
+        \item Are both ways \textit{correct}? Which way do you \textit{prefer}?
+    \end{enumerate}
 \end{enumerate}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Learning target DF5, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
- Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (product, quotient, sum and difference, etc.) you are using. 
+\section{Learning target 2.5, version 1}
+
+Compute derivatives using the chain rule.
+
+\hrulefill
+
+Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (chain, product, quotient, sum and difference, etc.) you are using.
 
 \begin{enumerate}
-\item
-\stxKnowl{
-\(h(t)= 16 \, {\left(t + e^{t} + 2\right)}^{4}\)
-
-\stxOuttro{
-\[h' (t)= 64 \, {\left(t + e^{t} + 2\right)}^{3} {\left(e^{t} + 1\right)}\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(f(w)= 5 \, \sin\left(w^{\frac{7}{3}}\right)\)
-
-\stxOuttro{
-\[f' (w)= \frac{35}{3} \, w^{\frac{4}{3}} \cos\left(w^{\frac{7}{3}}\right)\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(g(x)= 5 \, \Big(\sin\left(x\right)\Big)^{\frac{7}{3}}\)
-
-\stxOuttro{
-\[g' (x)= \frac{35}{3} \, \cos\left(x\right) \sin\left(x\right)^{\frac{4}{3}}\]
-
-}
-}
-\vfill
+    \item \(h(t)= 16 \, {\left(t + e^{t} + 2\right)}^{4}\)
+    \vfill
+    \item \(f(w)= 5 \, \sin\left(w^{7/3}\right)\)
+    \vfill
+    \item \(g(w)= 5 \, \Big(\sin\left(w\right)\Big)^{7/3}\)
+    \vfill
+    \item \(p(y) = 2\ln\left(\sin(y) + y^2 + 3\right)\)
+    \vfill
 \end{enumerate}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Learning target DF6, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
- Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (constant multiple, sum and difference, etc.) you are using.
+\section{Learning target 2.all, version 1}
+
+Compute derivatives of complicated functions using a combination of derivative rules.
+
+\hrulefill
+
+Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (chain, product, quotient, sum and difference, etc.) you are using.
 
 \begin{enumerate}
-\item
-\stxKnowl{
-\(g(x) = \sqrt{\cos\left(-2 \, x^{4} + 5\right)}\)
-
-\stxOuttro{
-\[g ' (x) = \frac{4 \, x^{3} \sin\left(-2 \, x^{4} + 5\right)}{\sqrt{\cos\left(-2 \, x^{4} + 5\right)}}\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(f(w) = \left( \frac{6 \, {\left(w^{6} - 1\right)}}{5 \, w + 3} \right)^{ 4 }\)
-
-\stxOuttro{
-\[f ' (w) = 4 \left( \frac{6 \, {\left(w^{6} - 1\right)}}{5 \, w + 3} \right)^{ 3 } \left( \frac{36 \, w^{5}}{5 \, w + 3} - \frac{30 \, {\left(w^{6} - 1\right)}}{{\left(5 \, w + 3\right)}^{2}} \right)\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(h(y) = {\left(3 \, y^{2} + 7 \, y\right)}^{4} y^{\frac{1}{4}}\)
-
-\stxOuttro{
-\[h ' (y) = 4 \, {\left(3 \, y^{2} + 7 \, y\right)}^{3} {\left(6 \, y + 7\right)} y^{\frac{1}{4}} + \frac{{\left(3 \, y^{2} + 7 \, y\right)}^{4}}{4 \, y^{\frac{3}{4}}}\]
-
-}
-}
-\vfill
+    \item \(g(x) = \sqrt{\cos\left(-2 \, x^{4} + 5\right)}\)
+    \vfill
+    \item \(f(w) = \left( \frac{6 \, w^{6} - 1}{5 \, w^2 + 3} \right)^{ 4 }\)
+    \vfill
+    \item \(h(y) = {\left(3 \, y^{2} + 7 \, y\right)}^{4}\cdot y^{1/4}\)
+    \vfill
 \end{enumerate}
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Learning target DF7 and AD2, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
+\section{Learning target 2.7, version 1}
 
-\begin{enumerate}
-\item
-\stxKnowl{
-Use implicit differentiation to find \(\frac{dy}{dx}\), aka \(y'\), for the equation \(-7 \, x^{4} - 4 \, \cos\left(y\right) = -3 \, y^{4} - 7\).
+Compute derivatives of implicitly-defined functions.
 
-\stxOuttro{
-\[\frac{dy}{dx}=\frac{7 \, x^{3}}{3 \, y^{3} + \sin\left(y\right)}\]
+\hrulefill
 
-}
-}
-\vfill
-\item
-\stxKnowl{
-\textbf{(Also AD2)}
-The equation \(x^{3}-y^{3}=9xy\) (which makes a curve called the \textit{folium of Descartes}) contains the point \((-2, 4)\). Find an equation for the tangent line to this curve at this point, and use your tangent line to make a reasonable guess about the $y$-coordinate of the point $(-2.5, \rule{0.75cm}{0.15mm} )$.
+Consider the curve defined implicitly by the equation
+\[y^3-x\cdot y = -6.\]
+	
+\begin{enumerate}[leftmargin=15pt]
 
-\stxOuttro{
-\(\frac{dy}{dx}=\dfrac{3x^2-9y}{9x+3y^2}\), so the slope at \((-2,4)\) is \(-0.8\), and the equation of the tangent line is \(L(x) = -0.8(x+2) +4\). Since \(L(-2.5) = 4.4\), the point \((-2.5, 4.4)\) is pretty close to being on the original function.
+	\item Use implicit differentiation to find an expression for $\frac{dy}{dx}$ that depends on $x$ and $y$.  Show all of your work and thinking clearly, using correct notation.
 
-}
-}
-\vfill
+	\vfill
+
+	\item The point $(7,2)$ lies on this curve. (I promise this is true, but how would you check?) \\
+	Find the exact slope of the tangent line to this curve at the point \((7,2)\). Show clearly how you determined this value, and label your work with proper notation.
+
+	\vspace{1.25in}
+
+	
+	\item (Also LT 1.8!) Figure out the equation of the tangent line $L(x)$ to this curve at the point $(7,2)$, and use your tangent line equation to make a reasonable guess about the $y$-coordinate of the point $(6.8, \rule{0.75cm}{0.15mm} )$.
+	\vfill
+
 \end{enumerate}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Learning target DF8, version 1}
-\providecommand{\stxKnowl}{}\renewcommand{\stxKnowl}[1]{#1}
-\providecommand{\stxOuttro}{}\renewcommand{\stxOuttro}[1]{#1}
-\providecommand{\stxTitle}{}\renewcommand{\stxTitle}[1]{#1}
-% Comment next line to show outtros
-\renewcommand{\stxOuttro}[1]{}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\stxKnowl{
- Demonstrate and explain how to find the derivative of the following functions. Be sure to write down which derivative rules (product, quotient, sum and difference, etc.) you are using.
-
-\begin{enumerate}
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} m(u)= 6 \, \arcsin\left(u\right) \log\left(u^{4} + 9\right)\)
-
-\stxOuttro{
-\(\renewcommand{\log}{\ln} m' (u)= \frac{24 \, u^{3} \arcsin\left(u\right)}{u^{4} + 9} + \frac{6 \, \log\left(u^{4} + 9\right)}{\sqrt{-u^{2} + 1}}\)
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} k(x)= \log\left(4 \, \arcsin\left(x\right) + 7 \, \arctan\left(x\right)\right)\)
-
-\stxOuttro{
-\[\renewcommand{\log}{\ln} k' (x)= \frac{\frac{4}{\sqrt{-x^{2} + 1}} + \frac{7}{x^{2} + 1}}{4 \, \arcsin\left(x\right) + 7 \, \arctan\left(x\right)}\]
-
-}
-}
-\vfill
-\item
-\stxKnowl{
-\(\renewcommand{\log}{\ln} h(w)= \frac{\arctan\left(2 \, w\right)}{\log\left(-2 \, w\right)}\)
-
-\stxOuttro{
-\(\renewcommand{\log}{\ln} h' (w)= -\frac{\arctan\left(2 \, w\right)}{w \log\left(-2 \, w\right)^{2}} + \frac{2}{{\left(4 \, w^{2} + 1\right)} \log\left(-2 \, w\right)}\)
-
-}
-}
-\vfill
-\end{enumerate}
-}
-
-
 
 \end{document}
