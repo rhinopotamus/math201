@@ -1,0 +1,163 @@
+\input{../header}
+\usetikzlibrary{shapes.geometric, math}
+
+\begin{document}
+%
+
+
+%\onehalfspacing
+\allowdisplaybreaks
+
+\section{PS10: Sign charts, global optimization, and applied optimization}
+
+The ideas in section 3.3, 3.5, and 3.6 are all super related. Here is a problem set that will help you think about them all together. At the end of this document, you'll find recipes that will help you keep track of your work on each part.
+
+\section{Part 1: Sign charts; optimization without a physical context}
+
+(Modified from \href{https://activecalculus.org/single/sec-3-5-optimization.html\#act-3-5-1}{Activity 3.5.2})
+Suppose that $g(x) = \frac{1}{3}x^3 - 2x + 2$.
+
+\begin{enumerate}[(a), leftmargin=15pt]
+    \item Follow the recipe to make a sign chart for $g(x)$. Show all your work!
+    \item Follow the ``finding extreme values'' recipe to figure out the absolute minimum and absolute maximum of $g(x)$ on the domain $-2 \leq x \leq 3$. Report \textit{both} the output values \textit{and} the input values they occur at. Use Desmos to check your work.\\(Remember you can use curly brackets in Desmos to \href{https://help.desmos.com/hc/en-us/articles/4407885334285-Inequalities-and-Restrictions}{restrict the domain of a function}.)
+    \item Repeat for the domain $-2 \leq x \leq 2$. 
+    \item Repeat for the domain $-2 \leq x \leq 1$. 
+    \item Fiddle around in Desmos to find a domain for $g(x)$ on which neither the absolute minimum nor the absolute maximum occurs at a critical point.
+\end{enumerate}
+
+\section{Part 2: Optimization in a physical context}
+
+Suppose you have 20" of wire, which you are bending into some combination of a circle and a square, as illustrated below. (All-square-no-circle and all-circle-no-square are both allowed.)
+
+\vspace{0.5em}
+
+\begin{minipage}{0.3 \textwidth}
+    \begin{tikzpicture}
+        \tikzmath{
+            \r = 1.7;
+            \l = 2;
+        }
+        \draw (0, 0) circle[radius=\r];
+        \draw (0, 0) -- node[anchor = south west, midway] {$r$} (128:\r);
+        \draw (45:\r) -- node[below, midway] {$\ell$} ++( \l,   0)
+                      -- node[right, midway] {$\ell$} ++(  0,  \l)
+                      -- node[above, midway] {$\ell$} ++(-\l,   0)
+                      -- node[left,  midway] {$\ell$} ++(  0, -\l);
+    \end{tikzpicture}
+\end{minipage} %
+\hfill
+\begin{minipage}{0.65 \textwidth}
+    Do all six steps of the applied optimization recipe, which is included at the end of this document, to find the very largest and very smallest possible combined area. Notes:
+
+    \begin{itemize}[leftmargin=15pt]
+        \item We did this in class on Thursday, but in particular we solved our constraint equation for $\ell = \ldots$ and plugged that in our objective function to get $A(r)$.
+        \item This time, do it the other way around: solve the constraint equation for $r = \ldots$ and create an objective function $A(\ell)$.
+        \item Notice in particular that your domain $?? \leq \ell \leq ??$ will be a bit different than the version with $r$ in class.
+    \end{itemize}
+\end{minipage}
+
+
+\section{Part 3: Optimization in another physical context}
+
+Following on from the exit ticket from Thursday's class: If you cut exactly equal squares out of the corners of an $8.5" \times 11"$ sheet of paper and then fold up the flaps that are created on all four sides, you can make a box (that doesn't have a lid). How large should you cut the squares so that the resulting box has maximum volume, and how much volume does the resulting box hold?
+
+\pagebreak
+
+%##################################################################
+
+\section{Making a sign chart recipe}
+A \textit{sign chart}, as we learned in class by working on \href{https://rhinopotamus.github.io/pdf/highest-and-lowest.pdf}{this handout}, is a labeled number line. \href{https://activecalculus.org/single/sec-3-3-tests.html#Ex-f-from-f-prime}{Here's an example from the textbook, also.} Here's a recipe for making them:
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Figure out all the critical numbers of $f(x)$.
+    \begin{itemize}
+        \item Find the derivative $f'(x)$ and figure out where $f'(x) = 0$ or does not exist.
+        \item For finding zeroes, it may be useful to review \href{https://spot.pcc.edu/math/orcca/ed2/html/section-solving-quadratic-equations-by-factoring.html}{factoring and the Zero Product Property}.
+        \item For finding places where $f'(x)$ does not exist, think about what could be \textit{bad} $x$-values. Maybe are there things that would make you divide by zero? Or take the square root of a negative number? Or other weird domain issues?
+        \item Remember that the critical numbers are \textit{inputs}.
+    \end{itemize}
+    \item Put the critical numbers on a number line. 
+    \begin{itemize}
+        \item We low-key don't care about any other numbers. In particular, we low-key don't care about endpoints, at least not for now, and we probably don't care about $x=0$, unless of course it happens to be a critical number.
+        \item The critical numbers chop up the number line into a bunch of segments before and after each one.
+    \end{itemize}
+    \item Choose your favorite number from each of the segments and plug it into $f'(x)$.
+    \begin{itemize}
+        \item We are making a number line about \textit{slopes}, so we plug into $f'(x)$, not $f(x)$.
+        \item We low-key don't care what \textit{number} comes out of $f'(x)$; we really only care about its \textit{sign}: $+$ or $-$. (That's why this is called a \textit{sign} chart!)
+    \end{itemize}
+    \item Label each segment with the \textit{sign} of $f'(x)$ on that segment.
+    \item Translate the \textit{signs} of $f'(x)$ into the \textit{directions} -- increasing or decreasing -- of $f(x)$.
+\end{enumerate}
+%##################################################################
+\hrulefill
+\section{Finding extreme values recipe}
+Building on ideas from in class and on the exit ticket, here's a recipe for finding extreme values:
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Figure out all the critical numbers of $f(x)$. 
+    \begin{itemize}
+        \item I am once again emphasizing that the critical numbers are \textit{inputs}.
+    \end{itemize}
+    \item Plug the critical numbers into the original function $f(x)$.
+    \begin{itemize}
+        \item The outputs that result are called the \textit{critical values}.
+        \item What would happen if you accidentally plugged the critical numbers into $f'(x)$? 
+    \end{itemize} 
+    \item The endpoint numbers are also inputs, so plug them into the original function $f(x)$ too.
+    \item Compare all these original $f(x)$ outputs and find the biggest and the smallest.
+\end{enumerate}
+
+
+\pagebreak
+
+%##################################################################
+\section{Applied optimization recipe}
+A lot of calculus students find applied optimization (and related rates) particularly tricky, and here's why: \textit{there's no formula for doing them.} Every situation is a bit different, and what works in one case doesn't necessarily work in another.
+
+There is, however, a \textit{recipe} (if I was feeling very fancy I would call it a \textit{heuristic} -- google it) that you can follow to think your way through optimization problems.
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Draw (at least) three pictures.
+    \begin{itemize}
+        \item If you don't draw three, it's harder to see what's different between the pictures.
+        \item Draw your pictures pretty big, or you'll have a hard time labeling.
+        \item You might want to draw more pictures if your situation has interesting endpoints.
+    \end{itemize}
+    \item Determine what quantities are \textit{different} (ie., variables) and what ones are the same.
+    \begin{itemize}
+        \item If something is different between your pictures, label it with a letter.
+        \item If something is the same in all your pictures, label it with what number it is.
+    \end{itemize}
+    \item Write down a \textit{constraint equation}.
+    \begin{itemize}
+        \item This has to do with the quantity that's the same in your three pictures.
+        \item What keeps you from just using whatever numbers you want?
+    \end{itemize}
+    \item Write down an \textit{objective function}.
+    \begin{itemize}
+        \item This is the thing you want to be the biggest or smallest possible.
+        \item It must be a function of only one variable; use your constrant equation.
+        \item Creativity! Geometry! Trigonometry! Other math you remember!
+    \end{itemize}
+    \item Figure out any \textit{endpoints}.
+    \begin{itemize}
+        \item Can your one variable be any number you want? Does it have to at least be positive? Is there some kind of maximum or minimum value it could possibly be?
+    \end{itemize}
+    \item Do the \textit{finding extrema recipe}:
+    \begin{enumerate}
+        \item Find all the critical \textit{numbers} of the objective function.
+        \begin{itemize}
+            \item Figure out where the derivative is either zero or undefined.
+        \end{itemize}
+        \item Find all the critical \textit{values} of the objective function.
+        \begin{itemize}
+            \item Plug back into the original objective function.
+        \end{itemize}
+        \item Find all the endpoint values of the objective function.
+        \item Decide who is the smallest and the largest.
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
